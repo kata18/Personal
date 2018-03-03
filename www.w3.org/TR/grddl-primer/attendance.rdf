@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:Description>
+<name xmlns="http://example.org/attendance/">David</name>
+<date xmlns="http://example.org/attendance/">2006-01</date>
+<present xmlns="http://example.org/attendance/">y</present>
+</rdf:Description>
+<rdf:Description>
+<name xmlns="http://example.org/attendance/">David</name>
+<date xmlns="http://example.org/attendance/">2006-02</date>
+<present xmlns="http://example.org/attendance/">n</present>
+</rdf:Description>
+<rdf:Description>
+<name xmlns="http://example.org/attendance/">David</name>
+<date xmlns="http://example.org/attendance/">2006-03</date>
+<present xmlns="http://example.org/attendance/">y</present>
+</rdf:Description>
+<rdf:Description>
+<name xmlns="http://example.org/attendance/">David</name>
+<date xmlns="http://example.org/attendance/">2006-04</date>
+<present xmlns="http://example.org/attendance/">y</present>
+</rdf:Description>
+<rdf:Description>
+<name xmlns="http://example.org/attendance/">David</name>
+<date xmlns="http://example.org/attendance/">2006-05</date>
+<present xmlns="http://example.org/attendance/">y</present>
+</rdf:Description>
+<rdf:Description>
+<name xmlns="http://example.org/attendance/">David</name>
+<date xmlns="http://example.org/attendance/">2006-06</date>
+<present xmlns="http://example.org/attendance/">n</present>
+</rdf:Description>
+<rdf:Description>
+<name xmlns="http://example.org/attendance/">David</name>
+<date xmlns="http://example.org/attendance/">2006-07</date>
+<present xmlns="http://example.org/attendance/">n</present>
+</rdf:Description>
+<rdf:Description>
+<name xmlns="http://example.org/attendance/">David</name>
+<date xmlns="http://example.org/attendance/">2006-08</date>
+<present xmlns="http://example.org/attendance/">y</present>
+</rdf:Description>
+<rdf:Description>
+<name xmlns="http://example.org/attendance/">David</name>
+<date xmlns="http://example.org/attendance/">2006-09</date>
+<present xmlns="http://example.org/attendance/">n</present>
+</rdf:Description>
+<rdf:Description>
+<name xmlns="http://example.org/attendance/">David</name>
+<date xmlns="http://example.org/attendance/">2006-10</date>
+<present xmlns="http://example.org/attendance/">y</present>
+</rdf:Description>
+<rdf:Description>
+<name xmlns="http://example.org/attendance/">David</name>
+<date xmlns="http://example.org/attendance/">2006-11</date>
+<present xmlns="http://example.org/attendance/">y</present>
+</rdf:Description>
+<rdf:Description>
+<name xmlns="http://example.org/attendance/">David</name>
+<date xmlns="http://example.org/attendance/">2006-12</date>
+<present xmlns="http://example.org/attendance/">n</present>
+</rdf:Description>
+<rdf:Description>
+<name xmlns="http://example.org/attendance/">Jane</name>
+<date xmlns="http://example.org/attendance/">2006-01</date>
+<present xmlns="http://example.org/attendance/">n</present>
+</rdf:Description>
+<rdf:Description>
+<name xmlns="http://example.org/attendance/">Jane</name>
+<date xmlns="http://example.org/attendance/">2006-02</date>
+<present xmlns="http://example.org/attendance/">n</present>
+</rdf:Description>
+<rdf:Description>
+<name xmlns="http://example.org/attendance/">Jane</name>
+<date xmlns="http://example.org/attendance/">2006-03</date>
+<present xmlns="http://example.org/attendance/">y</present>
+</rdf:Description>
+<rdf:Description>
+<name xmlns="http://example.org/attendance/">Jane</name>
+<date xmlns="http://example.org/attendance/">2006-04</date>
+<present xmlns="http://example.org/attendance/">n</present>
+</rdf:Description>
+<rdf:Description>
+<name xmlns="http://example.org/attendance/">Jane</name>
+<date xmlns="http://example.org/attendance/">2006-05</date>
+<present xmlns="http://example.org/attendance/">n</present>
+</rdf:Description>
+<rdf:Description>
+<name xmlns="http://example.org/attendance/">Jane</name>
+<date xmlns="http://example.org/attendance/">2006-06</date>
+<present xmlns="http://example.org/attendance/">n</present>
+</rdf:Description>
+<rdf:Description>
+<name xmlns="http://example.org/attendance/">Jane</name>
+<date xmlns="http://example.org/attendance/">2006-07</date>
+<present xmlns="http://example.org/attendance/">y</present>
+</rdf:Description>
+<rdf:Description>
+<name xmlns="http://example.org/attendance/">Jane</name>
+<date xmlns="http://example.org/attendance/">2006-08</date>
+<present xmlns="http://example.org/attendance/">y</present>
+</rdf:Description>
+<rdf:Description>
+<name xmlns="http://example.org/attendance/">Jane</name>
+<date xmlns="http://example.org/attendance/">2006-09</date>
+<present xmlns="http://example.org/attendance/">y</present>
+</rdf:Description>
+<rdf:Description>
+<name xmlns="http://example.org/attendance/">Jane</name>
+<date xmlns="http://example.org/attendance/">2006-10</date>
+<present xmlns="http://example.org/attendance/">y</present>
+</rdf:Description>
+<rdf:Description>
+<name xmlns="http://example.org/attendance/">Jane</name>
+<date xmlns="http://example.org/attendance/">2006-11</date>
+<present xmlns="http://example.org/attendance/">n</present>
+</rdf:Description>
+<rdf:Description>
+<name xmlns="http://example.org/attendance/">Jane</name>
+<date xmlns="http://example.org/attendance/">2006-12</date>
+<present xmlns="http://example.org/attendance/">y</present>
+</rdf:Description>
+<rdf:Description>
+<name xmlns="http://example.org/attendance/">Robin</name>
+<date xmlns="http://example.org/attendance/">2006-01</date>
+<present xmlns="http://example.org/attendance/">y</present>
+</rdf:Description>
+<rdf:Description>
+<name xmlns="http://example.org/attendance/">Robin</name>
+<date xmlns="http://example.org/attendance/">2006-02</date>
+<present xmlns="http://example.org/attendance/">y</present>
+</rdf:Description>
+<rdf:Description>
+<name xmlns="http://example.org/attendance/">Robin</name>
+<date xmlns="http://example.org/attendance/">2006-03</date>
+<present xmlns="http://example.org/attendance/">n</present>
+</rdf:Description>
+<rdf:Description>
+<name xmlns="http://example.org/attendance/">Robin</name>
+<date xmlns="http://example.org/attendance/">2006-04</date>
+<present xmlns="http://example.org/attendance/">n</present>
+</rdf:Description>
+<rdf:Description>
+<name xmlns="http://example.org/attendance/">Robin</name>
+<date xmlns="http://example.org/attendance/">2006-05</date>
+<present xmlns="http://example.org/attendance/">n</present>
+</rdf:Description>
+<rdf:Description>
+<name xmlns="http://example.org/attendance/">Robin</name>
+<date xmlns="http://example.org/attendance/">2006-06</date>
+<present xmlns="http://example.org/attendance/">n</present>
+</rdf:Description>
+<rdf:Description>
+<name xmlns="http://example.org/attendance/">Robin</name>
+<date xmlns="http://example.org/attendance/">2006-07</date>
+<present xmlns="http://example.org/attendance/">y</present>
+</rdf:Description>
+<rdf:Description>
+<name xmlns="http://example.org/attendance/">Robin</name>
+<date xmlns="http://example.org/attendance/">2006-08</date>
+<present xmlns="http://example.org/attendance/">y</present>
+</rdf:Description>
+<rdf:Description>
+<name xmlns="http://example.org/attendance/">Robin</name>
+<date xmlns="http://example.org/attendance/">2006-09</date>
+<present xmlns="http://example.org/attendance/">y</present>
+</rdf:Description>
+<rdf:Description>
+<name xmlns="http://example.org/attendance/">Robin</name>
+<date xmlns="http://example.org/attendance/">2006-10</date>
+<present xmlns="http://example.org/attendance/">n</present>
+</rdf:Description>
+<rdf:Description>
+<name xmlns="http://example.org/attendance/">Robin</name>
+<date xmlns="http://example.org/attendance/">2006-11</date>
+<present xmlns="http://example.org/attendance/">n</present>
+</rdf:Description>
+<rdf:Description>
+<name xmlns="http://example.org/attendance/">Robin</name>
+<date xmlns="http://example.org/attendance/">2006-12</date>
+<present xmlns="http://example.org/attendance/">y</present>
+</rdf:Description>
+</rdf:RDF>

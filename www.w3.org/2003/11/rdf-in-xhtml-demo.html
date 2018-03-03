@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<!-- Mirrored from www.w3.org/2003/11/rdf-in-xhtml-demo by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 03 Mar 2018 21:10:31 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=iso-8859-1" /><!-- /Added by HTTrack -->
+<head profile="rdf-in-xhtml.html">
+<meta name="description" content="An interface to an XSLT-based implementation of the RDF in XHTML proposal" />
+<link rel="stylesheet" type="text/css"
+  href="../../StyleSheets/base-2.css" />
+<link rel="xslt2rdf" href="basic-xhtml" />
+<link rel="stylesheet" type="text/css" href="../../QA/2002/12/qa4.css"/>
+    <style type="text/css">
+      .deprecated { color : #ccc;}
+    </style>
+
+<title>Demonstration of an RDF in XHTML processor</title>
+</head>
+<body>
+<p><a href="../../index.html"><img src="../../Icons/w3c_home.png" alt="W3C" /></a></p>
+<h1>Demonstration of an RDF in XHTML processor</h1>
+
+<p>This system was a (non-fully compliant) XSLT-based implementation of <a href="../../2004/01/rdxh/spec.html">GRDDL</a> (first presented to the <a href="../../../lists.w3.org/Archives/Public/public-rdf-in-xhtml-tf/index.html">RDF in XHTML Task Force</a> on November 24, 2003, and substantially updated since).</p>
+
+    <p>It has been <strong>superseded by a <a href="../../2007/08/grddl/index.html">more robust GRDDL service</a></strong>.</p>
+<div class="deprecated">
+
+<p>There is also a more <a href="../../2004/01/rdxh/grddl-xml-demo.html">generic demonstration which works on any XML format</a>, once enabled with GRDDL.</p>
+<p>See also the <a href="../g/data-view.html">GRDDL HowTo</a>.</p>
+<form action="http://www.w3.org/2005/08/online_xslt/xslt" method="get">
+<div>
+<input type="hidden" name="xslfile" value="http://www.w3.org/2003/11/rdf-in-xhtml-processor" />
+<p><label>URI of the XHTML document to be processed: <input type="text" name="xmlfile" value="http://www.w3.org/2003/12/rdf-in-xhtml-xslts/complete-example.html" /></label> <label><input type="checkbox" name="recurse_auth" />Needs HTTP Authentication?</label></p>
+<p><input type="submit" value="Process" /><input type="reset" /></p>
+</div>
+</form>
+<p>This demonstration is based on an <a href="rdf-in-xhtml-processor">XSLT style sheet</a>.</p>
+<h2>Limitations</h2>
+<p>The compliance of this service to the GRDDL specification is limited by lack of error handling in XSLT 1.0 and limitations of the XSLT service it relies on ; it should give in most cases the expected results on input that does not generate errors.</p>
+</div>
+<address>
+<a href="../../People/Dom/index.html">Dominique Haza&euml;l-Massieux</a> - $Id: rdf-in-xhtml-demo.html,v 1.9 2007/08/28 08:31:15 dom Exp $
+</address>
+</body>
+
+<!-- Mirrored from www.w3.org/2003/11/rdf-in-xhtml-demo by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 03 Mar 2018 21:10:33 GMT -->
+</html>

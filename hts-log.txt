@@ -30,3 +30,26 @@ note:	the hts-log.txt file, and hts-cache folder, may contain sensitive informat
 16:04:33	Warning: 	Moved Permanently for www.youtube.com/yt/dev/es-419/
 16:04:33	Warning: 	Redirected link is identical because of 'URL Hack' option: www.youtube.com/yt/dev/es-419/ and https://www.youtube.com/yt/dev/es-419/
 16:04:33	Warning: 	File has moved from www.youtube.com/yt/dev/es-419/ to https://www.youtube.com/yt/dev/es-419/
+16:07:46	Warning: 	Found for www.youtube.com/yt/policyandsafety/es-419/
+16:07:46	Warning: 	File has moved from www.youtube.com/yt/policyandsafety/es-419/ to https://www.youtube.com/intl/es-419/yt/about/policies/
+16:07:47	Warning: 	Moved Permanently for support.google.com/youtube/?hl=es-419
+16:07:47	Warning: 	Redirected link is identical because of 'URL Hack' option: support.google.com/youtube/?hl=es-419 and https://support.google.com/youtube/?hl=es-419
+16:07:47	Warning: 	File has moved from support.google.com/youtube/?hl=es-419 to https://support.google.com/youtube/?hl=es-419
+16:08:12	Warning: 	Retry after error -4 (Connect Error) at link www.w3.org/2003/g/data-view http://purl.org/NET/erdf/profile (from www.w3.org/2003/g/data-view)
+16:08:13	Warning: 	FOUND for purl.org/dc/elements/1.1/
+16:08:13	Warning: 	File has moved from purl.org/dc/elements/1.1/ to http://dublincore.org/2012/06/14/dcelements
+16:08:20	Warning: 	See Other for xmlns.com/foaf/0.1/
+16:08:20	Warning: 	File has moved from xmlns.com/foaf/0.1/ to http://xmlns.com/foaf/spec/
+16:08:23	Warning: 	Moved Permanently for www.w3.org/RDF/
+16:08:23	Warning: 	File has moved from www.w3.org/RDF/ to https://www.w3.org/2001/sw/wiki/RDF
+16:08:24	Warning: 	Moved Permanently for www.microformats.org/robots.txt
+16:08:24	Warning: 	Redirected link is identical because of 'URL Hack' option: www.microformats.org/robots.txt and microformats.org/robots.txt
+16:08:24	Warning: 	Warning moved treated for www.microformats.org/robots.txt (real one is microformats.org/robots.txt)
+16:08:24	Warning: 	Moved Permanently for www.microformats.org/
+16:08:24	Warning: 	Redirected link is identical because of 'URL Hack' option: www.microformats.org/ and microformats.org/
+16:08:24	Warning: 	File has moved from www.microformats.org/ to http://microformats.org/
+16:08:32	Warning: 	Note: due to lists.w3.org remote robots.txt rules, links beginning with these path will be forbidden: /Archives/Member/, /Archives/Team/, /Archives/StO/, /Archives/Collab/, /Archives2/, /Archives/Public/w3c-translators (see in the options to disable this)
+16:09:34	Warning: 	Retry after error -4 (No data (connection closed)) at link purl.org/stuff/hdoap/profile (from www.w3.org/2003/g/data-view)
+16:10:36	Error: 	"Down" (503) at link xml.mfd-consult.dk/foaf/explorer/ (from www.w3.org/2003/g/data-view)
+16:10:39	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link geourl.org/robots.txt (from www.w3.org/2003/g/data-view)
+16:10:39	Warning: 	Retry after error -5 (Unable to get server's address: El nombre solicitado es válido pero no se encont) at link geourl.org/add.html (from www.w3.org/2003/g/data-view)

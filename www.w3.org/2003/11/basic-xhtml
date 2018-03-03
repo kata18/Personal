@@ -1,0 +1,18 @@
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:html="http://www.w3.org/1999/xhtml">
+  <xsl:output method="xml" encoding="utf-8" indent="yes"/>
+  <!-- Extracts some basic semantics from a classical XHTML document -->
+  <!-- as suggested by the HTML 4.01 Recommendation -->
+  <xsl:template match="/">
+    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+      <rdf:Description about="">
+        <dc:title><xsl:value-of select="html:html/html:head/html:title"/></dc:title>
+        <xsl:for-each select="html:html/html:head/html:meta[@name='description']">
+          <dc:description><xsl:value-of select="@content"/></dc:description>
+        </xsl:for-each>
+        <xsl:for-each select="html:html/html:body//html:a[@href]">
+          <rdfs:seeAlso rdf:resource="{@href}"/>
+        </xsl:for-each>
+      </rdf:Description>
+    </rdf:RDF>
+  </xsl:template>
+</xsl:stylesheet>

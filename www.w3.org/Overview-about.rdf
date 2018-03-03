@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:dc = "http://purl.org/dc/elements/1.1/">
+   <rdf:Description rdf:about="http://www.w3.org/">
+      <dc:subject>World Wide Web Consortium, W3C, World Wide Web, Web,
+        WWW, Consortium, computer, access, accessibility, semantic,
+        worldwide, W3, HTML, XML, standard, language, technology, link,
+        CSS, RDF, XSL, Berners-Lee, Berners, Lee, style sheet, cascading,
+        schema, XHTML, mobile, SVG, PNG, PICS, DOM, SMIL, MathML, markup,
+        Amaya, Jigsaw, free, open source, software</dc:subject> 
+      <dc:description>The World Wide Web Consortium (W3C) is about 400
+        organizations leading the World Wide Web to its full potential.
+        Founded by Tim Berners-Lee, the Web's inventor. The W3C Web site
+        hosts specifications, guidelines, software and tools. Public
+        participation is welcome. W3C supports universal access, the
+        Semantic Web, trust, interoperability, evolvability,
+        decentralization, and cooler multimedia.</dc:description> 
+      <dc:date>2003-03-13</dc:date>
+      <dc:format>text/html</dc:format>
+      <dc:language>en-US</dc:language>
+      <dc:creator>W3C Communications Team</dc:creator>
+      <dc:publisher>W3C - World Wide Web Consortium -
+         http://www.w3.org/</dc:publisher>
+      <dc:rights rdf:resource="http://www.w3.org/Consortium/Legal/copyright-documents"/>
+      <rdfs:seeAlso rdf:resource="http://www.w3.org/2000/08/w3c-synd/home.rss"/>
+   </rdf:Description>
+</rdf:RDF>

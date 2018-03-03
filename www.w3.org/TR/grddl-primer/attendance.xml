@@ -1,0 +1,213 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40"
+ xmlns:grddl="http://www.w3.org/2003/g/data-view#" 
+ grddl:transformation="xcel-mf2rdf.xsl">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>Network User</Author>
+  <LastAuthor>Network User</LastAuthor>
+  <Created>2007-06-11T19:11:01Z</Created>
+  <LastSaved>2007-06-11T19:42:01Z</LastSaved>
+  <Company>Cleveland Clinic Health Systems</Company>
+  <Version>11.6568</Version>
+ </DocumentProperties>
+ <CustomDocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <profile dt:dt="string">http://www.mnot.net/2005/08/xcel-mf</profile>
+  <namespace dt:dt="string">http://example.org/attendance/</namespace>
+ </CustomDocumentProperties>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>13170</WindowHeight>
+  <WindowWidth>19020</WindowWidth>
+  <WindowTopX>120</WindowTopX>
+  <WindowTopY>60</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s21">
+   <Font x:Family="Swiss" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s22">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s23">
+   <Borders>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+ </Styles>
+ <Names>
+  <NamedRange ss:Name="Data" ss:RefersTo="=Sheet1!R6C4:R8C15"/>
+  <NamedRange ss:Name="date" ss:RefersTo="=Sheet1!R3C4:R3C15"/>
+  <NamedRange ss:Name="Header"
+   ss:RefersTo="=Sheet1!R6C1:R8C1,Sheet1!R3C4,Sheet1!R3C15,Sheet1!R3C5,Sheet1!R3C6,Sheet1!R3C7,Sheet1!R3C7:R3C14,Sheet1!R3C7,Sheet1!R3C8,Sheet1!R3C7"/>
+  <NamedRange ss:Name="name" ss:RefersTo="=Sheet1!R6C1:R8C1"/>
+  <NamedRange ss:Name="present" ss:RefersTo="=Sheet1!R6C4:R8C15"/>
+ </Names>
+ <Worksheet ss:Name="Sheet1">
+  <Table ss:ExpandedColumnCount="15" ss:ExpandedRowCount="8" x:FullColumns="1"
+   x:FullRows="1">
+   <Row>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">Group attendance</Data></Cell>
+   </Row>
+   <Row ss:Index="3">
+    <Cell ss:Index="2" ss:StyleID="s21"><Data ss:Type="String">Date</Data></Cell>
+    <Cell ss:Index="4" ss:StyleID="s22"><Data ss:Type="String">2006-01</Data><NamedCell
+      ss:Name="Header"/><NamedCell ss:Name="date"/></Cell>
+    <Cell ss:StyleID="s22"><Data ss:Type="String">2006-02</Data><NamedCell
+      ss:Name="Header"/><NamedCell ss:Name="date"/></Cell>
+    <Cell ss:StyleID="s22"><Data ss:Type="String">2006-03</Data><NamedCell
+      ss:Name="Header"/><NamedCell ss:Name="date"/></Cell>
+    <Cell ss:StyleID="s22"><Data ss:Type="String">2006-04</Data><NamedCell
+      ss:Name="Header"/><NamedCell ss:Name="date"/></Cell>
+    <Cell ss:StyleID="s22"><Data ss:Type="String">2006-05</Data><NamedCell
+      ss:Name="Header"/><NamedCell ss:Name="date"/></Cell>
+    <Cell ss:StyleID="s22"><Data ss:Type="String">2006-06</Data><NamedCell
+      ss:Name="Header"/><NamedCell ss:Name="date"/></Cell>
+    <Cell ss:StyleID="s22"><Data ss:Type="String">2006-07</Data><NamedCell
+      ss:Name="Header"/><NamedCell ss:Name="date"/></Cell>
+    <Cell ss:StyleID="s22"><Data ss:Type="String">2006-08</Data><NamedCell
+      ss:Name="Header"/><NamedCell ss:Name="date"/></Cell>
+    <Cell ss:StyleID="s22"><Data ss:Type="String">2006-09</Data><NamedCell
+      ss:Name="Header"/><NamedCell ss:Name="date"/></Cell>
+    <Cell ss:StyleID="s22"><Data ss:Type="String">2006-10</Data><NamedCell
+      ss:Name="Header"/><NamedCell ss:Name="date"/></Cell>
+    <Cell ss:StyleID="s22"><Data ss:Type="String">2006-11</Data><NamedCell
+      ss:Name="Header"/><NamedCell ss:Name="date"/></Cell>
+    <Cell ss:StyleID="s22"><Data ss:Type="String">2006-12</Data><NamedCell
+      ss:Name="Header"/><NamedCell ss:Name="date"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">Member</Data></Cell>
+   </Row>
+   <Row ss:Index="6">
+    <Cell ss:StyleID="s23"><Data ss:Type="String">David</Data><NamedCell
+      ss:Name="name"/><NamedCell ss:Name="Header"/></Cell>
+    <Cell ss:Index="4"><Data ss:Type="String">y</Data><NamedCell ss:Name="present"/><NamedCell
+      ss:Name="Data"/></Cell>
+    <Cell><Data ss:Type="String">n</Data><NamedCell ss:Name="present"/><NamedCell
+      ss:Name="Data"/></Cell>
+    <Cell><Data ss:Type="String">y</Data><NamedCell ss:Name="present"/><NamedCell
+      ss:Name="Data"/></Cell>
+    <Cell><Data ss:Type="String">y</Data><NamedCell ss:Name="present"/><NamedCell
+      ss:Name="Data"/></Cell>
+    <Cell><Data ss:Type="String">y</Data><NamedCell ss:Name="present"/><NamedCell
+      ss:Name="Data"/></Cell>
+    <Cell><Data ss:Type="String">n</Data><NamedCell ss:Name="present"/><NamedCell
+      ss:Name="Data"/></Cell>
+    <Cell><Data ss:Type="String">n</Data><NamedCell ss:Name="present"/><NamedCell
+      ss:Name="Data"/></Cell>
+    <Cell><Data ss:Type="String">y</Data><NamedCell ss:Name="present"/><NamedCell
+      ss:Name="Data"/></Cell>
+    <Cell><Data ss:Type="String">n</Data><NamedCell ss:Name="present"/><NamedCell
+      ss:Name="Data"/></Cell>
+    <Cell><Data ss:Type="String">y</Data><NamedCell ss:Name="present"/><NamedCell
+      ss:Name="Data"/></Cell>
+    <Cell><Data ss:Type="String">y</Data><NamedCell ss:Name="present"/><NamedCell
+      ss:Name="Data"/></Cell>
+    <Cell><Data ss:Type="String">n</Data><NamedCell ss:Name="present"/><NamedCell
+      ss:Name="Data"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s23"><Data ss:Type="String">Jane</Data><NamedCell
+      ss:Name="name"/><NamedCell ss:Name="Header"/></Cell>
+    <Cell ss:Index="4"><Data ss:Type="String">n</Data><NamedCell ss:Name="present"/><NamedCell
+      ss:Name="Data"/></Cell>
+    <Cell><Data ss:Type="String">n</Data><NamedCell ss:Name="present"/><NamedCell
+      ss:Name="Data"/></Cell>
+    <Cell><Data ss:Type="String">y</Data><NamedCell ss:Name="present"/><NamedCell
+      ss:Name="Data"/></Cell>
+    <Cell><Data ss:Type="String">n</Data><NamedCell ss:Name="present"/><NamedCell
+      ss:Name="Data"/></Cell>
+    <Cell><Data ss:Type="String">n</Data><NamedCell ss:Name="present"/><NamedCell
+      ss:Name="Data"/></Cell>
+    <Cell><Data ss:Type="String">n</Data><NamedCell ss:Name="present"/><NamedCell
+      ss:Name="Data"/></Cell>
+    <Cell><Data ss:Type="String">y</Data><NamedCell ss:Name="present"/><NamedCell
+      ss:Name="Data"/></Cell>
+    <Cell><Data ss:Type="String">y</Data><NamedCell ss:Name="present"/><NamedCell
+      ss:Name="Data"/></Cell>
+    <Cell><Data ss:Type="String">y</Data><NamedCell ss:Name="present"/><NamedCell
+      ss:Name="Data"/></Cell>
+    <Cell><Data ss:Type="String">y</Data><NamedCell ss:Name="present"/><NamedCell
+      ss:Name="Data"/></Cell>
+    <Cell><Data ss:Type="String">n</Data><NamedCell ss:Name="present"/><NamedCell
+      ss:Name="Data"/></Cell>
+    <Cell><Data ss:Type="String">y</Data><NamedCell ss:Name="present"/><NamedCell
+      ss:Name="Data"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s23"><Data ss:Type="String">Robin</Data><NamedCell
+      ss:Name="name"/><NamedCell ss:Name="Header"/></Cell>
+    <Cell ss:Index="4"><Data ss:Type="String">y</Data><NamedCell ss:Name="present"/><NamedCell
+      ss:Name="Data"/></Cell>
+    <Cell><Data ss:Type="String">y</Data><NamedCell ss:Name="present"/><NamedCell
+      ss:Name="Data"/></Cell>
+    <Cell><Data ss:Type="String">n</Data><NamedCell ss:Name="present"/><NamedCell
+      ss:Name="Data"/></Cell>
+    <Cell><Data ss:Type="String">n</Data><NamedCell ss:Name="present"/><NamedCell
+      ss:Name="Data"/></Cell>
+    <Cell><Data ss:Type="String">n</Data><NamedCell ss:Name="present"/><NamedCell
+      ss:Name="Data"/></Cell>
+    <Cell><Data ss:Type="String">n</Data><NamedCell ss:Name="present"/><NamedCell
+      ss:Name="Data"/></Cell>
+    <Cell><Data ss:Type="String">y</Data><NamedCell ss:Name="present"/><NamedCell
+      ss:Name="Data"/></Cell>
+    <Cell><Data ss:Type="String">y</Data><NamedCell ss:Name="present"/><NamedCell
+      ss:Name="Data"/></Cell>
+    <Cell><Data ss:Type="String">y</Data><NamedCell ss:Name="present"/><NamedCell
+      ss:Name="Data"/></Cell>
+    <Cell><Data ss:Type="String">n</Data><NamedCell ss:Name="present"/><NamedCell
+      ss:Name="Data"/></Cell>
+    <Cell><Data ss:Type="String">n</Data><NamedCell ss:Name="present"/><NamedCell
+      ss:Name="Data"/></Cell>
+    <Cell><Data ss:Type="String">y</Data><NamedCell ss:Name="present"/><NamedCell
+      ss:Name="Data"/></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <Print>
+    <ValidPrinterInfo/>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>2</ActiveRow>
+     <ActiveCol>14</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="Sheet2">
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="Sheet3">
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

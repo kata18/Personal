@@ -1,0 +1,28 @@
+<rdf:RDF xmlns="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+ 
+    <owl:Class 
+rdf:about="http://www.example.org/grddl-primer#DiagnosingImage">
+        <owl:intersectionOf rdf:parseType="Collection">
+           <owl:Thing rdf:about="http://xmlns.com/foaf/0.1/Image"/>
+           <owl:Restriction>
+               <owl:onProperty 
+rdf:resource="http://www.example.org/grddl-primer#indicates"/>
+               <owl:someValuesFrom 
+rdf:resource="http://purl.org/cpr/0.5#medical-problem"/>
+           </owl:Restriction>
+        </owl:intersectionOf>
+    </owl:Class>
+ 
+    <owl:ObjectProperty 
+rdf:about="http://www.example.org/grddl-primer#indicates">
+        <comment>Property relating a foaf:Image to a medical sign it 
+indicates</comment>
+        <domain rdf:resource="http://xmlns.com/foaf/0.1/Image"/>
+        <range rdf:resource="http://purl.org/cpr/0.5#medical-sign"/>
+        <owl:inverseOf 
+rdf:resource="http://purl.org/cpr/0.5#interpretant-of"/>
+    </owl:ObjectProperty>
+</rdf:RDF>

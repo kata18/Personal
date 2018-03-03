@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+The aim of this stylesheet is to produce rdf metadata for a pubrules compliant document
+
+$Id: trdoc2rdf.xslt,v 2.33 2014-06-27 21:19:27 ijacobs Exp $
+-->
+<?xml-stylesheet href="http://www.w3.org/StyleSheets/base.css" type="text/css"?>
+<?xml-stylesheet href="http://www.w3.org/2002/02/style-xsl.css" type="text/css"?>
+<xsl:stylesheet version="2.0" 
+		xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+		xmlns:html="http://www.w3.org/1999/xhtml"
+		xmlns="http://www.w3.org/2001/02pd/rec54#"
+		xmlns:org="http://www.w3.org/2001/04/roadmap/org#" 
+		xmlns:rec="http://www.w3.org/2001/02pd/rec54#"
+		xmlns:contact="http://www.w3.org/2000/10/swap/pim/contact#"
+		xmlns:dc="http://purl.org/dc/elements/1.1/"
+		xmlns:doc="http://www.w3.org/2000/10/swap/pim/doc#"
+                xmlns:xs="http://www.w3.org/2001/XMLSchema"
+		xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		xmlns:trd="http://www.w3.org/2001/10/trdoc-data.xsl"
+		exclude-result-prefixes="html trd">
+
+  <xsl:import href="trdoc-data.xsl" />
+  <xsl:output method="xml" indent='yes' encoding='utf-8'/>
+  <xsl:param name="debug" select="0" />
+  <xsl:variable name="trdata" select="document('http://www.w3.org/2002/01/tr-automation/tr.rdf')"/>
+  <xsl:variable name="prevtrdata" select="$trdata//rdf:RDF/*[@rdf:about=trd:previousVersionURI()]"/>
+
+  <xsl:template match="/">
+     <xsl:apply-templates select="." mode="rdf"/>
+  </xsl:template>
+
+  <xsl:template match="/" mode="rdf">
+    <rdf:RDF>
+      <xsl:element name="{trd:getRootName()}" 
+		   namespace="http://www.w3.org/2001/02pd/rec54#"
+		   >
+        <xsl:attribute name="rdf:about">
+           <xsl:variable name="tvuri" select="trd:thisVersionURI()"/>
+	   <xsl:choose>
+             <xsl:when test="$tvuri=''">
+               <xsl:message>
+                 Warning! No "this version" URI found. This may
+                 be an older document whose markup is not up-to-date
+                 with 'modern' pubrules expectations.
+               </xsl:message>
+             </xsl:when>
+             <xsl:otherwise>
+               <xsl:value-of select="trd:thisVersionURI()"/>
+             </xsl:otherwise>
+           </xsl:choose>
+        </xsl:attribute>
+	<xsl:call-template name="additionalTypeInfo"/>
+	<xsl:call-template name="dateInfo"/>
+	<xsl:call-template name="titleInfo"/>
+	<xsl:call-template name="feedbackInfo"/>
+	<xsl:call-template name="trd:getActivity"/>
+	<xsl:call-template name="LatestVersionInfo"/>
+	<xsl:call-template name="delivererInfo"/>
+	<xsl:call-template name="editionInfo"/>
+	<xsl:call-template name="errata"/>
+	<xsl:call-template name="translations"/>
+	<xsl:call-template name="implreport"/>
+        <xsl:call-template name="trd:getEditorsList"/>
+        <xsl:call-template name="patentpolicy"/>
+        <xsl:call-template name="processrev"/>
+      </xsl:element>
+      <xsl:call-template name="firstedition"/>
+      <xsl:call-template name="sameas"/>
+    </rdf:RDF>
+  </xsl:template>
+
+  <xsl:function name="trd:getRootName">
+    <xsl:choose>
+      <xsl:when test="trd:getShortStatus()!=''">
+	<xsl:value-of select="trd:getShortStatus()"/>
+      </xsl:when>
+      <xsl:otherwise>
+	<xsl:message>No status found in that document. Not pubrules compliant</xsl:message>
+	<xsl:text>TRPub</xsl:text>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:function>
+
+  <xsl:template name="additionalTypeInfo">
+    <xsl:choose>
+      <xsl:when test="trd:isLastCall()">
+	<xsl:choose>
+	  <xsl:when test="trd:getFeedbackDueDate()">
+	    <rdf:type rdf:resource="http://www.w3.org/2001/02pd/rec54#LastCall"/>
+	  </xsl:when>
+	  <xsl:otherwise>
+	    <xsl:message>
+	      Warning! The document has been detected as a last call, but there is no feedback deadline, so it won't be handled as a Last Call unless you force it.
+	    </xsl:message>
+	  </xsl:otherwise>
+	</xsl:choose>
+      </xsl:when>
+    </xsl:choose>
+  </xsl:template>
+
+  <xsl:template name="dateInfo">
+    <dc:date><xsl:value-of select="trd:getXSDate()"/></dc:date>
+  </xsl:template>
+  
+  <xsl:variable name="title">
+    <xsl:call-template name="trd:getTitle"/>	
+  </xsl:variable>
+
+  <xsl:template name="titleInfo">
+    <dc:title><xsl:value-of select="$title"/></dc:title>
+  </xsl:template>
+
+  <xsl:template name="feedbackInfo">
+    <xsl:variable name="fb" select="trd:getFeedbackDueDate()"/>
+    <xsl:choose>
+      <xsl:when test="$fb">
+	<xsl:choose>
+	  <xsl:when test="trd:isPR()">
+	    <prReviewsDue><xsl:value-of select="$fb"/></prReviewsDue>
+	  </xsl:when>
+	  <xsl:when test="trd:isPER()">
+	    <perReviewsDue><xsl:value-of select="$fb"/></perReviewsDue>
+	  </xsl:when>
+	  <xsl:when test="trd:isCR()">
+	    <implementationFeedbackDue><xsl:value-of select="$fb"/></implementationFeedbackDue>
+	  </xsl:when>
+	  <xsl:when test="trd:isLastCall()">
+	    <lastCallFeedBackDue><xsl:value-of select="$fb"/></lastCallFeedBackDue>
+	  </xsl:when>	  
+	  <xsl:otherwise>
+	    <xsl:message>
+	      Warning: Feedback date found for wrong type of document.
+	    </xsl:message>
+	  </xsl:otherwise>
+	</xsl:choose>
+      </xsl:when>
+      <xsl:otherwise>
+	<xsl:if test="trd:isLastCall() or trd:isPR() or trd:isPER() or trd:isCR()">
+	  <xsl:message>
+	    Warning! This document is a PR, a PER or a CR, but no feedback deadline has been detected. You need to complete new-tr.rdf accordingly.
+	  </xsl:message>
+	</xsl:if>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+
+  <xsl:template name="LatestVersionInfo">
+    <xsl:variable name="lvuri" select="trd:latestVersionURI()"/>
+    <doc:versionOf rdf:resource="{$lvuri}"/>
+    <xsl:if test="not($trdata//rdf:RDF/*/doc:versionOf[normalize-space(@rdf:resource)=$lvuri]) and normalize-space(trd:previousVersionURI())">
+      <xsl:message>
+	Warning! The latest version doesn't match anything known in tr.rdf: either the shortname has changed, or there is a trailing / error. Please fix before proceeding.
+      </xsl:message>
+    </xsl:if>
+  </xsl:template>
+
+  <xsl:template name="delivererInfo">
+    <xsl:variable name="deliverer">
+      <xsl:call-template name="trd:getWorkingGroup"/>
+    </xsl:variable>
+    <xsl:choose>
+      <xsl:when test="boolean($deliverer)">
+	<xsl:copy-of select="$deliverer"/>
+      </xsl:when>
+      <xsl:otherwise>
+	<xsl:message>
+	  Warning! Working Group Home page not found in SOTD (missing /? not in /2000/04/mem-news/public-groups.rdf?). Please check, the current output won't give the Working Group(s).
+	</xsl:message>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+
+  <xsl:template name="editionInfo">
+    <xsl:variable name="pvuri" select="trd:previousVersionURI()"/>
+    <xsl:variable name="prved" select="trd:previousEditionURI()" as="xs:string*"/>
+    <xsl:variable name="eddraft" select="trd:editorDraftURI()" as="xs:string*"/>
+    <xsl:if test="$pvuri!=''"> 
+      <xsl:choose>
+	<xsl:when test="$pvuri!=$prved">
+	  <doc:obsoletes rdf:resource="{$pvuri}"/>
+	  <xsl:if test="not($prevtrdata)">
+	    <xsl:message>
+	      Warning! The previous version doesn't match anything known in tr.rdf. probably a trailing / error, please fix before proceeding
+	    </xsl:message>
+	  </xsl:if>
+	</xsl:when>
+	<xsl:otherwise>
+	    <xsl:message>
+	      Warning! The previous version URI seems to be the same
+              as the previous edition URI, which should not happen.
+	    </xsl:message>
+	</xsl:otherwise>
+      </xsl:choose>
+      <xsl:for-each select="$prved">
+	<xsl:if test=".!=''">
+	  <previousEdition rdf:resource="{normalize-space(.)}"/>
+	</xsl:if>
+      </xsl:for-each>
+    </xsl:if>
+    <xsl:if test="$eddraft!=''"> 
+       <doc:editorDraft rdf:resource="{$eddraft}"/>
+    </xsl:if>
+  </xsl:template>
+
+
+  <xsl:function name="trd:previousEditionURI" as="xs:string*">
+    <!-- Find the previousEditionURI as follows:
+        1) First look for Recommendations having the same
+           latest version URI. Take the one that was most
+           recently published.
+
+        2) If none found, assume that the latest version URI
+           changed since the previous edition was published and
+           look for a Rec (there should be at most one) whose
+           "this version" URI matches the "previous version"
+           URI we are evaluating.
+    -->
+    <xsl:variable name="preved1" select="trd:mostRecentEditionURI(trd:latestVersionURI())" as="xs:string*"/>
+    <xsl:choose>
+      <xsl:when test="count($preved1) gt 0">
+	<xsl:value-of select="$preved1"/>
+      </xsl:when>
+      <xsl:otherwise>
+	<xsl:variable name="preved2" select="trd:mostRecentEditionURI($trdata//rdf:Description[@rdf:about=trd:latestVersionURI()]/rec:supersedes/@rdf:resource)" as="xs:string*"/>
+	<xsl:choose>
+	  <xsl:when test="count($preved2) gt 0">
+	    <xsl:value-of select="$preved2"/>
+	  </xsl:when>
+	  <xsl:otherwise>
+	    <xsl:text></xsl:text>
+	    <xsl:if test="trd:isREC() and not(matches(trd:latestVersionURI(),'.*?/$'))">
+	      <xsl:message>
+	      Warning! No previous edition found. That may be fine,
+              but I see the latest version URI does not end with 
+              a slash. If I add a slash and test again, I find
+	      <xsl:variable name="preved3" select="trd:mostRecentEditionURI(concat(trd:latestVersionURI(),'/'))" as="xs:string*"/>
+	      <xsl:value-of select="if (count($preved3) gt 0) then $preved3 else 'no previous edition found with extra end slash.'"/>
+	      <xsl:if test="matches($title,'edition','i')">
+              Also, the title includes the word "edition", which
+              may mean that the specification refers to a previous
+              edition; please confirm status manually.
+              </xsl:if>
+	      </xsl:message>
+	      <xsl:text></xsl:text>
+	    </xsl:if>
+	    <xsl:text></xsl:text>
+	  </xsl:otherwise>
+	</xsl:choose>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:function>
+  
+
+  <xsl:function name="trd:mostRecentEditionURI" as="xs:string*">
+    <!-- A spec may incorporate a number of previous documents. Therefore this function returns a list of URIs. Note that the URIs may be empty. -->
+    <xsl:param name="lvuri" as="xs:string*"/>
+    <xsl:for-each select="$lvuri">
+      <xsl:variable name="recs" select="trd:RecsHavingLVURI(.)"/>
+      <xsl:if test="$recs!=''">
+	<xsl:value-of select="normalize-space($recs[dc:date=max($recs/xs:date(dc:date))]/@rdf:about)"/>
+	</xsl:if>
+    </xsl:for-each>
+  </xsl:function>
+         
+  <!-- Look only for Recs published prior to the date of the
+       current publication, since this function only used in
+       the context of previous editions -->
+
+  <xsl:function name="trd:RecsHavingLVURI">
+    <xsl:param name="lvuri"/>
+    <xsl:variable name="beforedate" select="trd:getXSDate()"/>
+    <xsl:copy-of select="$trdata//rdf:RDF/*[doc:versionOf/@rdf:resource=normalize-space($lvuri)][not(@rdf:about=trd:thisVersionURI())][(local-name()='REC' or local-name()='FirstEdition' or rdf:type/@rdf:resource='http://www.w3.org/2001/02pd/rec54#REC')][xs:date(dc:date) lt $beforedate]"/>
+  </xsl:function>
+
+  <xsl:template name="errata">
+    <xsl:if test="trd:getErrata()!=''">
+      <mat:hasErrata xmlns:mat='http://www.w3.org/2002/05/matrix/vocab#' rdf:resource="{trd:getErrata()}"/>
+    </xsl:if>
+  </xsl:template>
+
+  <xsl:template name="translations">
+    <xsl:if test="trd:getTranslations()!=''">
+      <mat:hasTranslations xmlns:mat='http://www.w3.org/2002/05/matrix/vocab#' rdf:resource="{trd:getTranslations()}"/>
+
+    </xsl:if>
+  </xsl:template>
+
+  <xsl:template name="implreport">
+    <xsl:if test="trd:getImplReport()!=''">
+      <mat:hasImplReport xmlns:mat='http://www.w3.org/2002/05/matrix/vocab#' rdf:resource="{trd:getImplReport()}"/>
+    </xsl:if>
+  </xsl:template>
+
+  <xsl:template name="patentpolicy">
+    <xsl:if test="not(trd:isNOTE() or trd:isSubmission())">
+      <xsl:choose>
+	<xsl:when test="trd:isInformative()">
+	   <rdf:type rdf:resource="http://www.w3.org/2002/05/matrix/vocab#Informative"/>
+       	</xsl:when>
+	<xsl:when test="trd:underW3CPatentPolicy()">
+	  <rec:patentRules rdf:resource="http://www.w3.org/Consortium/Patent-Policy-20040205/"/>
+	</xsl:when>
+	<xsl:when test="trd:underCPP()">
+	  <rec:patentRules rdf:resource="http://www.w3.org/TR/2002/NOTE-patent-practice-20020124"/>
+	</xsl:when>
+      </xsl:choose>
+    </xsl:if>
+  </xsl:template>
+
+  <xsl:template name="processrev">
+    <xsl:variable name="procrev" select="trd:getProcessRevision()"/>
+    <xsl:if test="trd:processRevisionRequired(trd:getXSDate())">
+      <xsl:choose>
+	<xsl:when test="$procrev=''">
+	  <xsl:message>
+	    Warning! The publication date of this document is after the launch of the 2014 Process, and therefore this document must indicate explicitly which process governs its development. No URI was found to identify the process; see pubrules for more information.
+	  </xsl:message>
+	</xsl:when>
+	<xsl:when test="trd:validProcessRevision($procrev)">
+	  <rec:processRules rdf:resource="{$procrev}"/>
+	</xsl:when>
+	<xsl:otherwise>
+	  <xsl:message>
+	    Warning! Found this process revision URI &lt;<xsl:value-of select="$procrev"/>&gt; which is not valid and thus will not include process information for this document.
+	  </xsl:message>
+	</xsl:otherwise>
+      </xsl:choose>
+    </xsl:if>
+  </xsl:template>
+
+  <!-- Note: "FirstEdition" is not a useful name. The relationship
+       is really "previousEdition". -->
+
+  <xsl:template name="firstedition">
+    <xsl:variable name="prved" select="trd:previousEditionURI()"/>
+    <xsl:if test="$prved!='' and trd:isREC()">
+      <FirstEdition rdf:about="{$prved}"/>
+    </xsl:if>
+  </xsl:template>
+  
+  <xsl:template name="sameas">
+    <xsl:if test="trd:hasNewShortname()">
+      <xsl:variable name="old_latest_version" select="$prevtrdata/doc:versionOf/@rdf:resource"/>
+      <xsl:choose>
+	<xsl:when test="normalize-space($old_latest_version)">
+	  <xsl:message>
+	    Warning! New shortname detected; assumption is done that it's only a change of shortname (tweaking is needed if this is a split of an existing TR in several ones, or any other complex change)
+	  </xsl:message>
+	  <rdf:Description rdf:about="{trd:latestVersionURI()}">
+	    <rec:formerShortname><xsl:value-of select="translate(substring-after($old_latest_version,'http://www.w3.org/TR/'),'/','')"/></rec:formerShortname>
+	    <rec:sameWorkAs rdf:resource="{$old_latest_version}"/>
+	  </rdf:Description>
+	</xsl:when>
+	<xsl:otherwise>
+	  <xsl:message>
+	    Warning! The previous version link and the latest version link don't match, but the previous version link doesn't match anything known in tr.rdf, so pretending the previous version link does not come from TR
+	  </xsl:message>
+	</xsl:otherwise>
+      </xsl:choose>
+    </xsl:if>
+  </xsl:template>
+  
+  <xsl:template name="trd:formatEditorName">
+    <xsl:param name="trd:EditorName"/>
+    <xsl:param name="trd:EditorMailbox"/>
+    <!-- Let's warn if an editor is not in the list of known TR
+    editors to request an update -->
+    <xsl:variable name="known" select="some $e in
+    document('../../2002/01/tr-automation/known-tr-editors.rdf')/rdf:RDF/rdf:Description satisfies trd:matchName($e,$trd:EditorName)" as="xs:boolean"/>
+    <xsl:if test="not($known)">
+      <xsl:message>	
+        Warning, "<xsl:value-of select="$trd:EditorName"/>" is not in the known TR editors lists (known-tr-editors.n3), which means that he/she won't appear in the TR view by author; please update this list accordingly [you shall proceed during the tr-process even though].
+      </xsl:message>
+    </xsl:if>
+    <editor rdf:parseType="Resource">
+      <contact:fullName><xsl:value-of select="if (not($known)) then 'UNKNOWN ' else ''"/><xsl:value-of select="normalize-space($trd:EditorName)"/></contact:fullName>
+      <xsl:if test="normalize-space($trd:EditorMailbox)">
+        <contact:mailbox rdf:resource="{$trd:EditorMailbox}"/>          
+      </xsl:if> 
+    </editor>
+  </xsl:template>
+
+    <!-- Here's the grammar:
+         (First | Initial) (Middle | Initial) (Last) (Suffix)?
+      or
+         (Last) (First)
+    -->
+
+  <xsl:function name="trd:matchName" as="xs:boolean">
+    <xsl:param name="desc"/>
+    <xsl:param name="name"/>
+    <xsl:choose>
+      <xsl:when test="$desc/org:name">
+	<!--
+	<xsl:message>Part 1 </xsl:message>
+	-->
+	<xsl:analyze-string select="normalize-space($name)"
+			    regex="^{normalize-space($desc/org:name)}$">
+	  <xsl:matching-substring>true</xsl:matching-substring>
+	  <xsl:non-matching-substring>false</xsl:non-matching-substring>
+	</xsl:analyze-string>    
+      </xsl:when>
+      <xsl:otherwise>
+	<!--
+	<xsl:message>Part 2, <xsl:value-of select="$name"/> </xsl:message>
+	-->
+	<xsl:analyze-string select="normalize-space($name)"
+			    regex="^(({normalize-space($desc/contact:firstName)}|{normalize-space($desc/contact:firstNameInitial)})(\s+({normalize-space($desc/contact:middleName)}|{normalize-space($desc/contact:middleNameInitial)}))?\s+{normalize-space($desc/contact:lastName)}(\s+{normalize-space($desc/contact:personalSuffix)})?)|({normalize-space($desc/contact:lastName)}\s+{normalize-space($desc/contact:firstName)})$">
+	  <xsl:matching-substring>true</xsl:matching-substring>
+	  <xsl:non-matching-substring>false</xsl:non-matching-substring>
+	</xsl:analyze-string>    
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:function>
+
+  <xsl:template name="trd:formatActivityStatement">
+    <xsl:param name="uri"/>
+    <cites rdf:resource="{$uri}"/>
+    <!-- Note: In the old code there was an &lt;ActivityStatement&gt;
+        element but the Webmaster indicated it was unused -->
+  </xsl:template>
+
+  <xsl:template name="trd:formatActivityHP">
+    <xsl:param name="uri"/>
+  </xsl:template>
+
+  <xsl:template name="trd:formatWorkingGroupHP">
+    <xsl:param name="uri"/>
+    <org:deliveredBy rdf:parseType="Resource">
+      <contact:homePage rdf:resource="{$uri}"/>
+    </org:deliveredBy>
+  </xsl:template>
+
+  <xsl:template match="*|@*" mode="rdf">
+    <xsl:apply-templates select="node()|@*" mode="rdf"/>
+  </xsl:template>
+
+</xsl:stylesheet>
+

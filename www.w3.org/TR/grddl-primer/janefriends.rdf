@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:_7="http://xmlns.com/foaf/0.1/"
+   xmlns:_8="http://gmpg.org/xfn/11#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:nodeID="pIixCXWE10">
+    <_7:homepage rdf:resource="http://paul.example.org/"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="pIixCXWE7">
+    <_7:homepage rdf:resource="http://peter.example.org/"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="pIixCXWE8">
+    <_7:homepage rdf:resource="http://peter.example.org/"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="pIixCXWE6">
+    <_7:homepage rdf:resource="http://www.w3.org/2001/sw/grddl-wg/doc29/janefriends.html"/>
+    <_8:met rdf:nodeID="pIixCXWE10"/>
+    <_8:met rdf:nodeID="pIixCXWE8"/>
+    <_8:met rdf:nodeID="pIixCXWE9"/>
+    <_8:friend rdf:nodeID="pIixCXWE7"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="pIixCXWE9">
+    <_7:homepage rdf:resource="http://john.example.org"/>
+  </rdf:Description>
+</rdf:RDF>
+

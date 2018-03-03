@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="../../../1999/xhtml/index.html">
+
+<!-- Mirrored from www.w3.org/2003/12/rdf-in-xhtml-xslts/complete-example.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 03 Mar 2018 21:11:44 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=iso-8859-1" /><!-- /Added by HTTrack -->
+<head profile="../../g/data-view.html">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <title>Joe Lambda's Home page [an example of RDF in XHTML]</title>
+  <link rel="schema.DC" href="../../../../purl.org/DC/index.html" />
+  <link rel="meta" type="application/rdf+xml" title="FOAF"
+  href="../../../../services.w3.org/xsltfcf3?xslfile=http%3A%2F%2Fwww.w3.org%2F2003%2F11%2Frdf-in-xhtml-processor;xmlfile=http%3A%2F%2Fwww.w3.org%2F2003%2F12%2Frdf-in-xhtml-xslts%2Fcomplete-example.html"
+  />
+  <meta name="DC.Title" xml:lang="en" lang="en"
+  content="Joe Lambda Home page as example of RDF in XHTML" />
+  <meta name="DC.Creator" content="Joe Lambda" />
+  <meta name="DC.Description" xml:lang="en" lang="en"
+  content="home page for the infamous Joe Lambda, with the purpose of demonstrating how to mix several RDF vocabularies in XHTML"
+  />
+  <meta name="DC.Publisher"
+  content="W3C - World Wide Web Consortium - http://www.w3.org" />
+  <link rel="transformation" href="grokFOAF.xsl" />
+  <link rel="transformation" href="grokCC.xsl" />
+  <link rel="transformation" href="grokGeoURL.xsl" />
+  <link rel="transformation" href="../../../2000/06/dc-extract/dc-extract.xsl" />
+  <link rel="transformation" href="../../../2000/08/w3c-synd/home2rss.xsl" />
+  <link rel="stylesheet" href="../../../StyleSheets/base.css" />
+  <link rel="stylesheet" type="text/css" href="../../../QA/2002/12/qa4.css" />
+  <meta name="ICBM" content="39.2975, -94.71388888888889" />
+</head>
+
+<body>
+
+<div class="foaf-person">
+<h1>Joe Lambda's homepage</h1>
+
+<p><strong>note: a <a href="../../../2004/lambda/Sites/index.html">newer version</a>
+of this example is in progress..</strong></p>
+
+<p>Hi there, my name is <span class="foaf-name">Joe Lambda</span>, and I work
+at <a href="../../../../www.acme.org/index.html" rel="foaf-work">ACME Inc.</a>. You can
+contact me by email at <a
+href="mailto:joe.lambda@example.org">joe.lambda@example.org</a>, or get more
+info on my <a href="../../../../www.example.org/_jlambda/index.html"
+rel="foaf-home">personal home page</a>.</p>
+
+<h2>People I know</h2>
+<ul>
+  <li><a href="../../../../www.example.org/_bfoo/index.html" rel="foaf-knows">Bill
+  Foo</a></li>
+  <li><a href="mailto:gbaz@example.com" rel="foaf-knows">G. Baz</a></li>
+</ul>
+</div>
+
+<h2 id="slogan">Joe's Thoughts</h2>
+
+<div class="item">
+<h3 id="blog2">Taking a trip to Boston</h3>
+
+<p><b class="date">15 Jan 2004</b> I'm all set. It's gonna be great! Hmm...
+maybe I'll put my itinerary online so folks can tell if they'll be in town at
+the same time I am.</p>
+
+<p><a
+href="complete-example.html#blog2"
+rel="details">permalink</a> (well, not really...)</p>
+</div>
+
+<div class="item">
+<h3 id="blog1">New home page</h3>
+
+<p><b class="date">4 Dec 2003</b> Whee! Web publishing is fun!</p>
+
+<p><a
+href="complete-example.html#blog1"
+rel="details">permalink</a> (well, not really...)</p>
+</div>
+
+<blockquote>
+  <h2>An example of RDF in XHTML</h2>
+
+  <p>This page is a fake home page for Joe Lambda, with the purpose of
+  demonstrating how to mix several RDF vocabularies in XHTML using a <a
+  href="../../11/rdf-in-xhtml-proposal.html">technique involving XSLT</a>.</p>
+
+  <p>The following RDF vocabularies/applications are implemented in this
+  page:</p>
+  <ul>
+    <li><a href="../../../../www.foaf-project.org/index.html">FOAF</a>, using <a
+      href="grokFOAF.xsl">grokFOAF.xsl</a> (see <a
+      href="../../../../xml.mfd-consult.dk/foaf/explorer/indexe9f8.html?foaf=http%3A%2F%2Fwww.w3.org%2F2003%2F12%2Frdf-in-xhtml-xslts%2Fcomplete-example.html">this
+      content via FOAF explorer</a>)</li>
+    <li><a href="../../../../creativecommons.org/licenses/index.html">Creative Commons
+      Licenses</a>, using <a href="grokCC.xsl">grokCC.xsl</a></li>
+    <li><a href="../../../../purl.org/DC/index.html">Dublin Core</a> (1.1), using <a
+      href="../../../2000/06/dc-extract/dc-extract.xsl">dc-extract.xsl</a></li>
+    <li><a href="../../../../geourl.org/index.html">GeoURL</a>, using <a
+      href="grokGeoURL.xsl">grokGeoURL.xsl</a></li>
+    <li><a href="../../../../purl.org/rss/1.0/index.html">RSS 1.0</a>, using <a
+      href="../../../2000/08/w3c-synd/home2rss.xsl">home2rss.xsl</a></li>
+  </ul>
+
+  <p>The <a
+  href="../../../../services.w3.org/xslt66fa?xslfile=http%3A%2F%2Fwww.w3.org%2F2003%2F11%2Frdf-in-xhtml-processor&amp;xmlfile=http%3A%2F%2Fwww.w3.org%2F2003%2F12%2Frdf-in-xhtml-xslts%2Fcomplete-example.html">output
+  of this</a> can be seen as RDF using the <a
+  href="../../11/rdf-in-xhtml-demo.html">demonstrator based on an XSLT
+  servlet</a>.</p>
+
+  <p>This page also uses <a href="../../../../rdfweb.org/topic/Autodiscovery.html">FOAF
+  autodiscovery</a> (ie. <em>link rel="meta"</em> conventions in the
+  document's head) to link to the derrived RDF data. This allows tools such
+  as <a href="../../../../xml.mfd-consult.dk/index.html">FOAF Explorer</a> or the <a
+  href="../../../../www.typepad.com/index.html">TypePad</a> weblogging service (see <a
+  href="joe-lambda-typepad.png">screenshot</a> of "add a friend" facility) to
+  exploit a machine-readable view of the data in this document.</p>
+  <address>
+    <a href="../../../People/Dom/index.html">Dominique Hazaël-Massieux</a> &lt;<a
+    href="mailto:dom@w3.org">dom@w3.org</a>&gt;<br />
+    Last Modified: $Date: 2004/02/05 23:33:49 $
+  </address>
+</blockquote>
+<hr />
+<address>
+  Joe Lamba<br />
+  <small>$Revision: 1.28 $ of $Date: 2004/02/05 23:33:49 $</small><br />
+  This page is licensed with a <a
+  href="../../../../creativecommons.org/licenses/by-nd/1.0/index.html"
+  rel="cc-license">Creative Common License</a> allowing copy and
+  redistribution with attribution to the author, and disallowing derivative
+  works.
+</address>
+</body>
+
+<!-- Mirrored from www.w3.org/2003/12/rdf-in-xhtml-xslts/complete-example.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 03 Mar 2018 21:11:55 GMT -->
+</html>

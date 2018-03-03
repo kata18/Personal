@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:_6="http://www.w3.org/2002/12/cal/icaltzd#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:nodeID="jTCXOrie6">
+    <_6:location xml:lang="en">Cologne, Germany</_6:location>
+    <rdf:type rdf:resource="http://www.w3.org/2002/12/cal/icaltzd#Vevent"/>
+    <_6:url rdf:resource="http://www.w3.org/2001/sw/grddl-wg/doc29/robin-hcal-grddl.html"/>
+    <_6:summary xml:lang="en">New line review</_6:summary>
+    <_6:dtstart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2006-10-26</_6:dtstart>
+    <_6:dtend rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2006-10-28</_6:dtend>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="jTCXOrie5">
+    <_6:location xml:lang="en">Paris, France</_6:location>
+    <rdf:type rdf:resource="http://www.w3.org/2002/12/cal/icaltzd#Vevent"/>
+    <_6:url rdf:resource="http://www.w3.org/2001/sw/grddl-wg/doc29/robin-hcal-grddl.html"/>
+    <_6:summary xml:lang="en">Fashion Expo</_6:summary>
+    <_6:dtstart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2006-10-20</_6:dtstart>
+    <_6:dtend rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2006-10-23</_6:dtend>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="jTCXOrie7">
+    <_6:location xml:lang="en">Rome, Italy</_6:location>
+    <rdf:type rdf:resource="http://www.w3.org/2002/12/cal/icaltzd#Vevent"/>
+    <_6:url rdf:resource="http://www.w3.org/2001/sw/grddl-wg/doc29/robin-hcal-grddl.html"/>
+    <_6:summary xml:lang="en">Clothing 2006</_6:summary>
+    <_6:dtstart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2006-12-01</_6:dtstart>
+    <_6:dtend rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2006-12-06</_6:dtend>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="jTCXOrie4">
+    <rdf:type rdf:resource="http://www.w3.org/2002/12/cal/icaltzd#Vcalendar"/>
+    <_6:component rdf:nodeID="jTCXOrie5"/>
+    <_6:component rdf:nodeID="jTCXOrie8"/>
+    <_6:component rdf:nodeID="jTCXOrie7"/>
+    <_6:component rdf:nodeID="jTCXOrie6"/>
+    <_6:component rdf:nodeID="jTCXOrie9"/>
+    <_6:prodid>-//connolly.w3.org//palmagent 0.6 (BETA)//EN</_6:prodid>
+    <_6:version>2.0</_6:version>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="jTCXOrie9">
+    <_6:location xml:lang="en">New York, USA</_6:location>
+    <rdf:type rdf:resource="http://www.w3.org/2002/12/cal/icaltzd#Vevent"/>
+    <_6:url rdf:resource="http://www.w3.org/2001/sw/grddl-wg/doc29/robin-hcal-grddl.html"/>
+    <_6:summary xml:lang="en">Board Review</_6:summary>
+    <_6:dtstart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2007-02-23</_6:dtstart>
+    <_6:dtend rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2007-02-25</_6:dtend>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="jTCXOrie8">
+    <_6:location xml:lang="en">Edinburgh, UK</_6:location>
+    <rdf:type rdf:resource="http://www.w3.org/2002/12/cal/icaltzd#Vevent"/>
+    <_6:url rdf:resource="http://www.w3.org/2001/sw/grddl-wg/doc29/robin-hcal-grddl.html"/>
+    <_6:summary xml:lang="en">Web Design Conference</_6:summary>
+    <_6:dtstart rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2007-01-08</_6:dtstart>
+    <_6:dtend rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2007-01-11</_6:dtend>
+  </rdf:Description>
+</rdf:RDF>
+

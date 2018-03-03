@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dataview="http://www.w3.org/2003/g/data-view#"
+         xml:base="http://www.w3.org/2003/12/rdf-in-xhtml-xslts/complete-example.html"><!--XHTML Transformation produced by $Id: rdf-in-xhtml-processor.xsl,v 1.46 2007/05/30 12:18:21 dom Exp $-->
+   <foaf:Person xmlns:foaf="http://xmlns.com/foaf/0.1/"
+                xmlns:html="http://www.w3.org/1999/xhtml"
+                xmlns:foafGrddl="http://www.w3.org/2003/12/rdf-in-xhtml-xslts/grokFOAF">
+      <foaf:name>Joe Lambda</foaf:name>
+      <foaf:mbox rdf:resource="mailto:joe.lambda@example.org"/>
+      <foaf:workplaceHomepage rdf:resource="http://www.acme.org"/>
+      <foaf:homepage rdf:resource="http://www.example.org/~jlambda/"/>
+      <foaf:knows>
+         <foaf:Person>
+            <foaf:name>Bill
+  Foo</foaf:name>
+            <foaf:homepage rdf:resource="http://www.example.org/~bfoo/"/>
+         </foaf:Person>
+      </foaf:knows>
+      <foaf:knows>
+         <foaf:Person>
+            <foaf:name>G. Baz</foaf:name>
+            <foaf:mbox rdf:resource="mailto:gbaz@example.com"/>
+         </foaf:Person>
+      </foaf:knows>
+   </foaf:Person>
+   <cc:Work xmlns:h="http://www.w3.org/1999/xhtml"
+            xmlns:cc="http://web.resource.org/cc/"
+            xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:dt="http://www.w3.org/2001/XMLSchema#"
+            rdf:about="">
+      <cc:license>
+         <cc:License xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                     rdf:about="http://creativecommons.org/licenses/by-nd/1.0/">
+            <cc:permits rdf:resource="http://web.resource.org/cc/Reproduction"/>
+            <cc:permits rdf:resource="http://web.resource.org/cc/Distribution"/>
+            <cc:requires rdf:resource="http://web.resource.org/cc/Notice"/>
+            <cc:requires rdf:resource="http://web.resource.org/cc/Attribution"/>
+         </cc:License>
+      </cc:license>
+   </cc:Work>
+   <rdf:Description xmlns:h="http://www.w3.org/1999/xhtml"
+                    xmlns:dc="http://purl.org/dc/elements/1.1/"
+                    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+                    xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+                    xmlns:dt="http://www.w3.org/2001/XMLSchema#"
+                    rdf:about="">
+      <foaf:topic rdf:parseType="Resource">
+         <geo:lat>39.2975</geo:lat>
+         <geo:long> -94.71388888888889</geo:long>
+      </foaf:topic>
+   </rdf:Description>
+   <rdf:Description xmlns:h="http://www.w3.org/1999/xhtml"
+                    xmlns="http://www.w3.org/1999/xhtml"
+                    xmlns:DC="http://purl.org/dc/elements/1.1/"
+                    xmlns:DCTERMS="http://purl.org/dc/terms/"
+                    rdf:about="">
+      <title xmlns="http://purl.org/dc" xml:lang="en">Joe Lambda Home page as example of RDF in XHTML</title>
+      <creator xmlns="http://purl.org/dc">Joe Lambda</creator>
+      <description xmlns="http://purl.org/dc" xml:lang="en">home page for the infamous Joe Lambda, with the purpose of demonstrating how to mix several RDF vocabularies in XHTML</description>
+      <publisher xmlns="http://purl.org/dc">W3C - World Wide Web Consortium - http://www.w3.org</publisher>
+   </rdf:Description>
+   <channel xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+            xmlns="http://purl.org/rss/1.0/"
+            xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:h="http://www.w3.org/1999/xhtml"
+            xmlns:hr="http://www.w3.org/2000/08/w3c-synd/#"
+            rdf:about="">
+      <title>Joe Lambda's Home page [an example of RDF in XHTML]</title>
+      <description>Joe's Thoughts</description>
+      <link/>
+      <dc:date>2004-02-05</dc:date>
+      <items>
+         <rdf:Seq>
+            <rdf:li rdf:resource="http://www.w3.org/2003/12/rdf-in-xhtml-xslts/complete-example.html#blog2"/>
+            <rdf:li rdf:resource="http://www.w3.org/2003/12/rdf-in-xhtml-xslts/complete-example.html#blog1"/>
+         </rdf:Seq>
+      </items>
+   </channel>
+   <item xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns="http://purl.org/rss/1.0/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:h="http://www.w3.org/1999/xhtml"
+         xmlns:hr="http://www.w3.org/2000/08/w3c-synd/#"
+         rdf:about="http://www.w3.org/2003/12/rdf-in-xhtml-xslts/complete-example.html#blog2">
+      <title>Taking a trip to Boston</title>
+      <description>15 Jan 2004 I'm all set. It's gonna be great! Hmm... maybe I'll put my itinerary online so folks can tell if they'll be in town at the same time I am.</description>
+      <link>http://www.w3.org/2003/12/rdf-in-xhtml-xslts/complete-example.html#blog2</link>
+      <dc:date>2004-01-15</dc:date>
+   </item>
+   <item xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns="http://purl.org/rss/1.0/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:h="http://www.w3.org/1999/xhtml"
+         xmlns:hr="http://www.w3.org/2000/08/w3c-synd/#"
+         rdf:about="http://www.w3.org/2003/12/rdf-in-xhtml-xslts/complete-example.html#blog1">
+      <title>New home page</title>
+      <description>4 Dec 2003 Whee! Web publishing is fun!</description>
+      <link>http://www.w3.org/2003/12/rdf-in-xhtml-xslts/complete-example.html#blog1</link>
+      <dc:date>2003-12-04</dc:date>
+   </item>
+   <rdf:Description xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+                    xmlns="http://purl.org/rss/1.0/"
+                    xmlns:dc="http://purl.org/dc/elements/1.1/"
+                    xmlns:h="http://www.w3.org/1999/xhtml"
+                    xmlns:hr="http://www.w3.org/2000/08/w3c-synd/#"
+                    rdf:about="">
+      <rdfs:seeAlso rdf:resource="http://www.w3.org/2000/06/webdata/xslt?xslfile=http%3A%2F%2Fwww.w3.org%2F2003%2F11%2Frdf-in-xhtml-processor;xmlfile=http%3A%2F%2Fwww.w3.org%2F2003%2F12%2Frdf-in-xhtml-xslts%2Fcomplete-example.html"/>
+   </rdf:Description>
+</rdf:RDF>

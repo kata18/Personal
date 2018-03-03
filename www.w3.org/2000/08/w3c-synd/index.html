@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="../../../1999/xhtml/index.html">
+
+<!-- Mirrored from www.w3.org/2000/08/w3c-synd/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 03 Mar 2018 21:09:34 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=iso-8859-1" /><!-- /Added by HTTrack -->
+<head  profile="../../../2003/g/data-view.html">
+<title>An XHTML profile for RDF Site Summaries</title>
+<link type="text/css" rel="stylesheet" href="../../../StyleSheets/base-2.css" />
+  <link rel="transformation"
+  href="../../../2003/12/rdf-in-xhtml-xslts/grddlProfileTransformation.xsl" />
+</head>
+<body>
+<div class="head"><a href="../../../index.html" title="W3C Home"><img
+height="48" width="72" alt="W3C" src="../../../Icons/w3c_home.png" /></a> | <a
+href="../../01/sw/index.html">Semantic Web Development</a></div>
+
+<h1>Site Summaries in XHTML</h1>
+
+<p>We use a constrained dialect of XHTML to express <a href=
+"../../../../www.egroups.com/files/rss-dev/specification.html#s5.3">channels</a>
+in the <a href="../../../../purl.org/rss/1.0/index.html" name="Specificat"
+id="Specificat">RSS</a> sense:</p>
+
+<ul>
+<li>the title of the channel is taken from the title of the page</li>
+
+<li>each <code>&lt;div class="item"&gt;</code> on the page indicates
+an RSS <a
+href="../../../../www.egroups.com/files/rss-dev/specification.html#s5.5">item</a>
+
+
+<ul>
+<li>each such div element should contain an <code>h2</code> or
+<code>h3</code> element; this serves as the item's <a
+href="../../../../www.egroups.com/files/rss-dev/specification.html#s5.5.2">title</a>.</li>
+
+<li>it should also contain a <code>p</code> element that serves as the
+item's <a
+href="../../../../www.egroups.com/files/rss-dev/specification.html#s5.5.4">description</a>.</li>
+
+<li>the <code>p</code> element should contain an <code>&lt;a
+rel="details" href="...ref..."&gt;...&lt;/a&gt;</code> which is taken
+as the URI of the item.</li>
+
+<li>the div should contain some element with class="date"; its content
+should be a date in DD Month YYYY format; this is taken as the Dublin
+Core date of the item.</li>
+</ul>
+</li>
+</ul>
+
+<p id="meta">This dialect also includes the popular convention for linking to
+additional RDF metadata such as Dublin Core Subject, Description,
+Date, Format, Language, Creator, Publisher, and Rights:</p>
+
+<pre>
+&lt;link rel="meta" href="<a href="../../../Overview-about.rdf">Overview-about.rdf</a>" /&gt;
+</pre>
+
+<p>This dialect (more formally, <a
+href="../../../TR/1999/REC-html401-19991224/struct/global.html#profiles">metadata
+profile</a> as specified in <a
+href="../../../TR/1999/REC-html401-19991224/types.html#h-6.12">section
+6.12 Link types</a> of the <a href="../../../TR/html4/index.html">HTML 4.0
+specification</a>) should be declared explicitly ala <tt>&lt;head
+profile="http://www.w3.org/2000/08/w3c-synd/#"></tt>.</p>
+
+<h2>The Transformation in XSLT</h2>
+
+<p>Share and enjoy:</p>
+
+<ul>
+<li class="subProfile">a <a rel="profileTransformation" href="home2rss.xsl">profile transformation</a> (in <a
+href="../../../Style/XSL/index.html">XSLT</a>) for <a href="#" rel="profile">this profile</a></li>
+
+<li><a href="Makefile.html">Makefile</a></li>
+
+<li><a href="../../../blog/news/feed/atom">output</a> (generated live
+from our home page)</li>
+</ul>
+
+<p>The <a
+href="../../../../archive.oreilly.com/meerkat/index6347.html?&amp;c=4743&amp;t=ALL">
+W3C at meerkat</a> channel seems to be working (Sep 2000). Keep your
+fingers crossed!</p>
+
+<h3>Variations on RSS</h3>
+
+<p>In an <a href="../../../../groups.yahoo.com/group/rss-dev/index.html">RSS-DEV</a>
+discussion, Teun Duynstee contributed <a
+href="../../../../groups.yahoo.com/neo/groups/rss-dev/conversations/topics/2017.html">edits</a> to
+support <a href="../../../../backend.userland.com/rss092">RSS 0.92</a>.
+Danbri integrated them (2001-05-31) into <a
+href="home2rss092.xsl">home2rss092.xsl</a>, which produces an <a
+href="../../../blog/news/feed/atom">RSS 0.92 feed</a>.  Please send suggestions/fixes
+to RSS-DEV.</p>
+
+<h2>Try it</h2>
+
+<form method="get" action="http://www.w3.org/2000/06/webdata/xslt">
+<p>XSL file: <input type="text" size="60" name="xslfile"
+value="home2rss.xsl" /></p>
+
+<p>XML data: <input type="text" size="60" name="xmlfile"
+value="../../../index.html" /></p>
+
+<p>Base: <input type="text" size="60" name="Base"
+value="../../../index.html" /></p>
+
+<p>Channel: <input type="text" size="60" name="Channel"
+value="../../../blog/news/feed/atom" /></p>
+
+<p>Page: <input type="text" size="60" name="Page"
+value="../../../index.html" /></p>
+
+<p><input type="submit" value="Get Results" /></p>
+</form>
+
+<h2>Background</h2>
+
+<p>Following the Aug 2000 <a
+href="../../../../lists.w3.org/Archives/Public/www-rdf-interest/2000Aug/0064.html">
+announcement</a> of RSS-ala-RDF (thanks Ian, Rael, Danbri, and Guha!), and my notes on Semantic Web screen
+scraping (e.g. <a href="../../07/hs78/index.html">HyperRDF</a>), I developed this
+little <a href="home2rss.xsl">transformation</a> that
+turns the <a href="../../../index.html">W3C home page</a> into RSS.</p>
+
+<p>This isn't a really original idea; see <a
+href="../../../../www.bris.ac.uk/ilrt/discovery/2000/08/hss/sw.html">XHTML-to-RSS
+Extractor service</a> by Evic van der VList and DanBri; one of the <a
+href="../../../../www.egroups.com/links/rss-dev/Tools_000966119199/Online_Converters_000966847112/index.html">
+RSS tools</a>.</p>
+
+<h3 id="Frameworks">Frameworks and Applications</h3>
+
+<p>W3C has taken a "framework" approach to things like channels,
+packages and such. We had the <a href="../../../TR/NOTE-CDFsubmit.html">CDF</a>
+submission in March '97, <a href="../../../Submission/index.html#s1997-9">OSD</a> and <a
+href="../../../Submission/index.html#s1997-10">DRP</a> in Aug '97. We held a <a
+href="../../../Architecture/9709_Workshop/index.html">Sep '97 push workshop</a> and ended
+up pursuing <a href="../../../RDF/index.html">RDF</a>, a general framework for resource
+description and metadata, rather than particular vocabularies.</p>
+
+<p>The idea behind this sort of generalized approach is that it adds
+just a little cost/complexity to each of the applications, but in
+return, each application is part of a richer whole. Convincing the
+developers of the first few applications when they can't see the
+benefits is a challenge. (See also: the HTTP extension framework
+[@@link], XML namespaces, etc.)</p>
+
+<p>But imagine what the Web would be like if you needed a different
+client for search services, online documentation, community forums, and
+online banking. Actually, you don't have to imagine, you can probably
+just remember: you have used pre-web online information services,
+haven't you? ;-)</p>
+
+<p>RSS is a very successful metadata application, and I am enthusiastic
+about the move to (re-)align it with RDF. In this little application
+alone, I'm using RDF to leverage the RSS vocabulary and the Dublin Core
+vocabulary in the same description of our site.</p>
+
+<h2>Related Work, Future Directions</h2>
+
+<p><a href="../../../People/Dom/index.html">Dom</a> and <a
+href="../../../People/Lesch/index.html">Susan</a> have done the bulk of the work
+of applying this technology in W3C's operations. See especially
+<cite><a href="../../../2002/01/tr-automation/index.html">Automating the
+publication of Technical Reports</a></cite>. It would be nice to do <a
+href="../../../Status-2.html">software releases</a> ala <a
+href="../../../../usefulinc.com/doap/index.html">DOAP</a>.</p>
+
+<p>The <a href="../../07/hs78/index.html#link">Grounding link
+relationships and classes</a> section in <a
+href="../../07/hs78/index.html">HyperRDF</a> is some earlier, related
+work.  <a href="../../../2003/g/data-view.html">GRDDL</a> is a
+generalization of these techniques.</p>
+
+
+<hr />
+<address><!-- keep -->
+<a href="../../../People/Connolly/index.html">Dan Connolly</a>, Aug 2000<br />
+<small>$Revision: 1.26 $ of $Date: 2005/05/20 20:04:50 $ by $Author: connolly $</small><!-- /keep --></address>
+<pre><!-- log starts on next line -->
+$Log: Overview.html,v $
+Revision 1.26  2005/05/20 20:04:50  connolly
+item title can be h2 or h3
+
+Revision 1.25  2004/11/05 22:13:27  connolly
+restored meta anchor
+
+Revision 1.24  2004/11/05 19:20:55  connolly
+whitespace, linebreak
+
+Revision 1.23  2004/11/05 10:41:53  dom
+more subtle markup to identify "#" as a profile rather than the HTML document itself
+
+Revision 1.22  2004/11/04 16:18:04  dom
+really
+
+Revision 1.21  2004/11/04 16:16:58  dom
+proper GRDDL transformer link
+
+Revision 1.20  2004/11/04 16:14:19  dom
+uri simplification
+
+Revision 1.19  2004/11/04 16:12:26  dom
+getting rid of RDDL, making it valid XHTML Strict
+
+Revision 1.18  2004/11/04 15:15:15  connolly
+Update prompted by weekly markup checker:
+ - revert title/h1 to be about one convention for site summaries,
+   not all profiles at W3C
+ - revise how-to text to emphasize how-to over background spec links
+ - fold rel="meta" convention into the one profile
+ - made the RSS 0.92 stuff into complete sentences
+ - relativize more links
+ - fold references inline
+ - folded acks into background; updated related/future work
+ - localize move RDDL ns decl; hope to remove it
+ - us-ascii encoding
+ - added CVS changelog
+
+----------------------------
+revision 1.17
+date: 2004/10/19 16:03:04;  author: dom;  state: Exp;  lines: +7 -6
+grddl-enabling
+----------------------------
+revision 1.16
+date: 2003/09/01 17:40:11;  author: slesch;  state: Exp;  lines: +1 -1
+tweak
+----------------------------
+revision 1.15
+date: 2003/09/01 16:55:01;  author: slesch;  state: Exp;  lines: +168 -118
+added meta link type
+----------------------------
+revision 1.14
+date: 2001/05/31 17:24:11;  author: danbri;  state: Exp;  lines: +1 -2
+removed newline wrap
+----------------------------
+revision 1.13
+date: 2001/05/31 17:15:47;  author: danbri;  state: Exp;  lines: +15 -1
+added information about the RSS 0.92 experiment
+----------------------------
+revision 1.12
+date: 2000/11/17 16:31:31;  author: connolly;  state: Exp;  lines: +3 -4
+changed the title to connote less endorsement
+and to reflect the applicability of this
+tool to any/all web sites.
+----------------------------
+revision 1.11
+date: 2000/11/16 23:58:07;  author: danbri;  state: Exp;  lines: +7 -3
+removed link to alternate version, added mention of the recent change
+----------------------------
+revision 1.10
+date: 2000/11/16 22:53:59;  author: danbri;  state: Exp;  lines: +5 -2
+added link to new XSLT file
+to track changes in the RSS 1.0 proposal.
+----------------------------
+revision 1.9
+date: 2000/09/16 06:16:03;  author: connolly;  state: Exp;  lines: +31 -21
+(connolly) Changed through Jigsaw.
+----------------------------
+revision 1.8
+date: 2000/08/31 22:10:35;  author: connolly;  state: Exp;  lines: +2 -2
+fixed channel param
+----------------------------
+revision 1.7
+date: 2000/08/31 22:01:47;  author: connolly;  state: Exp;  lines: +19 -1
+added form
+----------------------------
+...
+----------------------------
+revision 1.1
+date: 2000/08/22 21:59:36;  author: connolly;  state: Exp;
+Overview.html
+
+</pre>
+</body>
+
+<!-- Mirrored from www.w3.org/2000/08/w3c-synd/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 03 Mar 2018 21:10:12 GMT -->
+</html>
