@@ -15,3 +15,18 @@ note:	the hts-log.txt file, and hts-cache folder, may contain sensitive informat
 15:49:03	Warning: 	Retry after error -4 (No data (connection closed)) at link rbista.com/zwin/html/images/prettyPhoto/dark_rounded/contentPattern.png (from rbista.com/zwin/html/css/prettyPhoto.css)
 15:49:13	Error: 	"Not Found" (404) at link https://www.youtube.com/android-app://com.google.android.youtube/http/www.youtube.com/watch?v=qqXi8WmQ_WM (from https://www.youtube.com/watch?v=qqXi8WmQ_WM)
 15:49:13	Error: 	"Not Found" (404) at link https://www.youtube.com/ios-app://544007664/vnd.youtube/www.youtube.com/watch?v=qqXi8WmQ_WM (from https://www.youtube.com/watch?v=qqXi8WmQ_WM)
+16:01:47	Warning: 	Note: due to https://itunes.apple.com remote robots.txt rules, links beginning with these path will be forbidden: /WebObjects/MZFastFinance.woa, /WebObjects/MZFinance.woa, /WebObjects/MZPersonalizer.woa, /WebObjects/MZStoreElements.woa, /station/idst., /WebObjects/*, /search*, /*/rss/*, /*/lookup? (see in the options to disable this)
+16:04:33	Warning: 	Moved Permanently for www.youtube.com/yt/about/es-419/
+16:04:33	Warning: 	Redirected link is identical because of 'URL Hack' option: www.youtube.com/yt/about/es-419/ and https://www.youtube.com/yt/about/es-419/
+16:04:33	Warning: 	File has moved from www.youtube.com/yt/about/es-419/ to https://www.youtube.com/yt/about/es-419/
+16:04:33	Warning: 	Found for www.youtube.com/yt/press/es-419/
+16:04:33	Warning: 	File has moved from www.youtube.com/yt/press/es-419/ to https://www.youtube.com/intl/es-419/yt/about/press/
+16:04:33	Warning: 	Found for www.youtube.com/yt/copyright/es-419/
+16:04:33	Warning: 	File has moved from www.youtube.com/yt/copyright/es-419/ to https://www.youtube.com/intl/es-419/yt/about/copyright/
+16:04:33	Warning: 	Moved Permanently for www.youtube.com/yt/creators/es-419/
+16:04:33	Warning: 	File has moved from www.youtube.com/yt/creators/es-419/ to https://www.youtube.com/intl/es-419/yt/creators/
+16:04:33	Warning: 	Moved Permanently for www.youtube.com/yt/advertise/es-419/
+16:04:33	Warning: 	File has moved from www.youtube.com/yt/advertise/es-419/ to https://www.youtube.com/intl/es-419/yt/advertise/
+16:04:33	Warning: 	Moved Permanently for www.youtube.com/yt/dev/es-419/
+16:04:33	Warning: 	Redirected link is identical because of 'URL Hack' option: www.youtube.com/yt/dev/es-419/ and https://www.youtube.com/yt/dev/es-419/
+16:04:33	Warning: 	File has moved from www.youtube.com/yt/dev/es-419/ to https://www.youtube.com/yt/dev/es-419/
