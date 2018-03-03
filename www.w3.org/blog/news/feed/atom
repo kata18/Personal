@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?><feed
+  xmlns="http://www.w3.org/2005/Atom"
+  xmlns:thr="http://purl.org/syndication/thread/1.0"
+  xml:lang="en-US"
+  xml:base="https://www.w3.org/blog/news/wp-atom.php"
+   >
+	<title type="text">W3C News</title>
+	<subtitle type="text">Leading the Web to its Full Potential</subtitle>
+
+	<updated>2018-03-02T08:03:28Z</updated>
+
+	<link rel="alternate" type="text/html" href="https://www.w3.org/blog/news" />
+	<id>https://www.w3.org/blog/news/feed/atom</id>
+	<link rel="self" type="application/atom+xml" href="https://www.w3.org/blog/news/feed/atom" />
+
+	<generator uri="https://wordpress.org/" version="4.9.4">WordPress</generator>
+	<entry>
+		<author>
+			<name>Xueyuan Jia</name>
+					</author>
+		<title type="html"><![CDATA[W3C Invites Implementations of the High Resolution Time Level 2]]></title>
+		<link rel="alternate" type="text/html" href="https://www.w3.org/blog/news/archives/6852" />
+		<id>https://www.w3.org/blog/news/?p=6852</id>
+		<updated>2018-03-01T14:44:55Z</updated>
+		<published>2018-03-01T11:47:48Z</published>
+		<category scheme="https://www.w3.org/blog/news" term="Home Page Stories" /><category scheme="https://www.w3.org/blog/news" term="Publication" /><category scheme="https://www.w3.org/blog/news" term="Web Design and Applications" />		<summary type="html"><![CDATA[The Web Performance Working Group invites implementations of an updated Candidate Recommendation of High Resolution Time Level 2. This specification defines an API that provides the time origin, and current time in sub-millisecond resolution, such that it is not subject to system clock skew or adjustments.]]></summary>
+		<content type="html" xml:base="https://www.w3.org/blog/news/archives/6852"><![CDATA[<p>The <a href="https://www.w3.org/webperf/">Web Performance Working Group</a> invites implementations of an updated Candidate Recommendation of <a href="https://www.w3.org/TR/2018/CR-hr-time-2-20180301/">High Resolution Time Level 2</a>. This specification defines an API that provides the time origin, and current time in sub-millisecond resolution, such that it is not subject to system clock skew or adjustments.</p>
+]]></content>
+		</entry>
+		<entry>
+		<author>
+			<name>Xueyuan Jia</name>
+					</author>
+		<title type="html"><![CDATA[WOFF File Format 2.0 is now a W3C Recommendation]]></title>
+		<link rel="alternate" type="text/html" href="https://www.w3.org/blog/news/archives/6846" />
+		<id>https://www.w3.org/blog/news/?p=6846</id>
+		<updated>2018-03-02T08:03:28Z</updated>
+		<published>2018-03-01T11:21:10Z</published>
+		<category scheme="https://www.w3.org/blog/news" term="Home Page Stories" /><category scheme="https://www.w3.org/blog/news" term="Publication" /><category scheme="https://www.w3.org/blog/news" term="Top Story" /><category scheme="https://www.w3.org/blog/news" term="Web Design and Applications" />		<summary type="html"><![CDATA[The WebFonts Working Group has published WOFF File Format 2.0 as a W3C Recommendation. Based on experience with WOFF 1.0, which is widely deployed, this specification was developed to provide improved compression and thus lower use of network bandwidth, while still allowing fast decompression even on mobile devices. This is achieved by combining a content-aware [&#8230;]]]></summary>
+		<content type="html" xml:base="https://www.w3.org/blog/news/archives/6846"><![CDATA[<p><a class="imageLink" href="https://www.w3.org/2018/02/media-advisory-woff2-rec.html.en"><img src="https://www.w3.org/Fonts/Style/fontsbg.png" alt="fonts illustration" width="100" /></a>The <a href="https://www.w3.org/Fonts/WG/">WebFonts Working Group</a> has published <a href="https://www.w3.org/TR/2018/REC-WOFF2-20180301/">WOFF File Format 2.0</a> as a W3C Recommendation. Based on experience with WOFF 1.0, which is widely deployed, this specification was developed to provide improved compression and thus lower use of network bandwidth, while still allowing fast decompression even on mobile devices. This is achieved by combining a content-aware preprocessing step and improved entropy coding, compared to the Flate compression used in WOFF 1.0. Read more in the <a href="https://www.w3.org/2018/02/media-advisory-woff2-rec.html.en">W3C Media Advisory</a>.</p>
+]]></content>
+		</entry>
+		<entry>
+		<author>
+			<name>Xueyuan Jia</name>
+					</author>
+		<title type="html"><![CDATA[Call for Review: TTML Profiles for Internet Media Subtitles and Captions 1.0.1 (IMSC1) is a W3C Proposed Recommendation]]></title>
+		<link rel="alternate" type="text/html" href="https://www.w3.org/blog/news/archives/6850" />
+		<id>https://www.w3.org/blog/news/?p=6850</id>
+		<updated>2018-03-01T14:44:21Z</updated>
+		<published>2018-02-27T17:06:42Z</published>
+		<category scheme="https://www.w3.org/blog/news" term="Home Page Stories" /><category scheme="https://www.w3.org/blog/news" term="Publication" /><category scheme="https://www.w3.org/blog/news" term="Web Design and Applications" />		<summary type="html"><![CDATA[The Timed Text Working Group has published a Proposed Recommendation of TTML Profiles for Internet Media Subtitles and Captions 1.0.1 (IMSC1). This document specifies two profiles of [TTML1]: a text-only profile and an image-only profile. These profiles are intended to be used across subtitle and caption delivery applications worldwide, thereby simplifying interoperability, consistent rendering and [&#8230;]]]></summary>
+		<content type="html" xml:base="https://www.w3.org/blog/news/archives/6850"><![CDATA[<p>The <a href="https://www.w3.org/AudioVideo/TT/">Timed Text Working Group</a> has published a Proposed Recommendation of <a href="https://www.w3.org/TR/2018/PR-ttml-imsc1.0.1-20180227/">TTML Profiles for Internet Media Subtitles and Captions 1.0.1 (IMSC1)</a>. This document specifies two profiles of [<a href="https://www.w3.org/TR/2018/PR-ttml-imsc1.0.1-20180227/#bib-TTML1">TTML1</a>]: a text-only profile and an image-only profile. These profiles are intended to be used across subtitle and caption delivery applications worldwide, thereby simplifying interoperability, consistent rendering and conversion to other subtitling and captioning formats.</p>
+<p>Comments are welcome through <strong>27 March 2018</strong>.</p>
+]]></content>
+		</entry>
+		<entry>
+		<author>
+			<name>Coralie Mercier</name>
+						<uri>http://coraliemercier.wordpress.com/</uri>
+					</author>
+		<title type="html"><![CDATA[First Public Working Draft: Text Layout Requirements for the Arabic Script]]></title>
+		<link rel="alternate" type="text/html" href="https://www.w3.org/blog/news/archives/6840" />
+		<id>https://www.w3.org/blog/news/?p=6840</id>
+		<updated>2018-02-22T12:31:51Z</updated>
+		<published>2018-02-22T11:07:43Z</published>
+		<category scheme="https://www.w3.org/blog/news" term="Browsers and Authoring Tools" /><category scheme="https://www.w3.org/blog/news" term="Home Page Stories" /><category scheme="https://www.w3.org/blog/news" term="Publication" /><category scheme="https://www.w3.org/blog/news" term="Web Design and Applications" /><category scheme="https://www.w3.org/blog/news" term="Web of Devices" /><category scheme="https://www.w3.org/blog/news" term="Web of Services" />		<summary type="html"><![CDATA[The Arabic Layout Task Force, part of the W3C Internationalization Interest Group, has published a First Public Working Draft of Text Layout Requirements for the Arabic Script. This document describes the basic requirements for Arabic script layout and text support on the Web and in eBooks. These requirements provide information for Web technologies such as [&#8230;]]]></summary>
+		<content type="html" xml:base="https://www.w3.org/blog/news/archives/6840"><![CDATA[<p><a class="imageLink" href="https://www.w3.org/TR/2018/WD-alreq-20180222/"><img src="https://www.w3.org/TR/2018/WD-alreq-20180222/images/order-of-directional-runs.svg" alt="illustration of the effect of base direction on the order of runs " width="100" /></a>The <a href="http://w3c.github.io/alreq/homepage/">Arabic Layout Task Force</a>, part of the <abbr title="World Wide Web Consortium">W3C</abbr> <a href="https://www.w3.org/International/ig/">Internationalization Interest Group</a>, has published a First Public Working Draft of <a href="https://www.w3.org/TR/2018/WD-alreq-20180222/">Text Layout Requirements for the Arabic Script</a>. This document describes the basic requirements for Arabic script layout and text support on the Web and in eBooks. These requirements provide information for Web technologies such as CSS, HTML and digital publications about how to support users of Arabic scripts. Currently the document focuses on Standard Arabic and Persian. Public comments are welcome, please raise them as <a href="https://github.com/w3c/alreq/issues">github issues</a>.</p>
+<p>Read how W3C <a href="https://www.w3.org/International/">Internationalization (i18n)</a> is making the World Wide Web worldwide.</p>
+]]></content>
+		</entry>
+		<entry>
+		<author>
+			<name>Coralie Mercier</name>
+						<uri>http://coraliemercier.wordpress.com/</uri>
+					</author>
+		<title type="html"><![CDATA[WebAssembly First Public Working Drafts]]></title>
+		<link rel="alternate" type="text/html" href="https://www.w3.org/blog/news/archives/6838" />
+		<id>https://www.w3.org/blog/news/?p=6838</id>
+		<updated>2018-02-15T12:44:01Z</updated>
+		<published>2018-02-15T12:44:01Z</published>
+		<category scheme="https://www.w3.org/blog/news" term="Home Page Stories" /><category scheme="https://www.w3.org/blog/news" term="Publication" /><category scheme="https://www.w3.org/blog/news" term="Web Design and Applications" /><category scheme="https://www.w3.org/blog/news" term="Web of Devices" /><category scheme="https://www.w3.org/blog/news" term="Web of Services" />		<summary type="html"><![CDATA[The WebAssembly Working Group has published three First Public Working Drafts: WebAssembly Core Specification describes version 1.0 of the core WebAssembly standard, a safe, portable, low-level code format designed for efficient execution and compact representation. WebAssembly JavaScript Interface provides an explicit JavaScript API for interacting with WebAssembly. WebAssembly Web API describes the integration of WebAssembly [&#8230;]]]></summary>
+		<content type="html" xml:base="https://www.w3.org/blog/news/archives/6838"><![CDATA[<p>The <a href="https://www.w3.org/wasm/">WebAssembly Working Group</a> has published three First Public Working Drafts:</p>
+<ul class="show_items">
+<li><a href="https://www.w3.org/TR/2018/WD-wasm-core-1-20180215/">WebAssembly Core Specification</a> describes version 1.0 of the core WebAssembly standard, a safe, portable, low-level code format designed for efficient execution and compact representation.</li>
+<li><a href="https://www.w3.org/TR/2018/WD-wasm-js-api-1-20180215/">WebAssembly JavaScript Interface</a> provides an explicit JavaScript API for interacting with WebAssembly.</li>
+<li><a href="https://www.w3.org/TR/2018/WD-wasm-web-api-1-20180215/">WebAssembly Web API</a> describes the integration of WebAssembly with the broader web platform.</li>
+</ul>
+<p>WebAssembly is a virtual instruction set architecture with many use cases and can be embedded in many different environments, that enables high performance applications on the Web. The design goals of WebAssembly are fast, safe, and portable semantics; efficient and portable representation. WebAssembly code is also intended to be easy to inspect and debug, especially in environments like web browsers.</p>
+]]></content>
+		</entry>
+		<entry>
+		<author>
+			<name>Coralie Mercier</name>
+						<uri>http://coraliemercier.wordpress.com/</uri>
+					</author>
+		<title type="html"><![CDATA[ODRL 2.2 is now a W3C Recommendation]]></title>
+		<link rel="alternate" type="text/html" href="https://www.w3.org/blog/news/archives/6835" />
+		<id>https://www.w3.org/blog/news/?p=6835</id>
+		<updated>2018-03-01T14:57:15Z</updated>
+		<published>2018-02-15T07:54:15Z</published>
+		<category scheme="https://www.w3.org/blog/news" term="Browsers and Authoring Tools" /><category scheme="https://www.w3.org/blog/news" term="Home Page Stories" /><category scheme="https://www.w3.org/blog/news" term="Publication" /><category scheme="https://www.w3.org/blog/news" term="Web Design and Applications" /><category scheme="https://www.w3.org/blog/news" term="Web of Services" />		<summary type="html"><![CDATA[The Permissions &#38; Obligations Expression Working Group has just published a Recommendation for two documents, namely: ODRL Information ModelThe Open Digital Rights Language (ODRL) is a policy expression language that provides a flexible and interoperable information model, vocabulary, and encoding mechanisms for representing statements about the usage of content and services. The ODRL Information Model [&#8230;]]]></summary>
+		<content type="html" xml:base="https://www.w3.org/blog/news/archives/6835"><![CDATA[<p><a class="imageLink" href="https://www.w3.org/blog/2018/02/odrl-a-path-well-travelled/"><img src="https://www.w3.org/blog/wp-content/uploads/2018/02/odrl-model-simplified-small.png" alt="diagram of simplified ODRL model" width="200" /></a>The <a href="https://www.w3.org/2016/poe/">Permissions &amp; Obligations Expression Working Group</a> has just published a Recommendation for two documents, namely:</p>
+<ul class="show_items">
+<li><a href="https://www.w3.org/TR/2018/REC-odrl-model-20180215/">ODRL Information Model</a>The Open Digital Rights Language (ODRL) is a policy expression language that provides a flexible and interoperable information model, vocabulary, and encoding mechanisms for representing statements about the usage of content and services. The ODRL Information Model describes the underlying concepts, entities, and relationships that form the foundational basis for the semantics of the ODRL policies.<br />
+Policies are used to represent permitted and prohibited actions over a certain asset, as well as the obligations required to be met by stakeholders. In addition, policies may be limited by constraints (e.g., temporal or spatial constraints) and duties (e.g., payments) may be imposed on permissions.</li>
+<li><a href="https://www.w3.org/TR/2018/REC-odrl-vocab-20180215/">ODRL Vocabulary &amp; Expression</a>The ODRL Vocabulary and Expression describes the terms used in ODRL policies and how to encode them.</li>
+</ul>
+<p>Please read more in the W3C Blog about ODRL, its story and its future, <a href="https://www.w3.org/blog/2018/02/odrl-a-path-well-travelled/">ODRL: A Path Well Travelled</a>, a post authored by the working group co-chair, Renato Iannella, Monegraph.</p>
+]]></content>
+		</entry>
+		<entry>
+		<author>
+			<name>Coralie Mercier</name>
+						<uri>http://coraliemercier.wordpress.com/</uri>
+					</author>
+		<title type="html"><![CDATA[W3C Invites Implementations of the Vehicle Information Service Specification]]></title>
+		<link rel="alternate" type="text/html" href="https://www.w3.org/blog/news/archives/6833" />
+		<id>https://www.w3.org/blog/news/?p=6833</id>
+		<updated>2018-02-13T14:28:40Z</updated>
+		<published>2018-02-13T14:28:40Z</published>
+		<category scheme="https://www.w3.org/blog/news" term="Home Page Stories" /><category scheme="https://www.w3.org/blog/news" term="Publication" /><category scheme="https://www.w3.org/blog/news" term="Web Design and Applications" /><category scheme="https://www.w3.org/blog/news" term="Web of Devices" /><category scheme="https://www.w3.org/blog/news" term="Web of Services" />		<summary type="html"><![CDATA[The Automotive Working Group invites implementations of the Vehicle Information Service Specification Candidate Recommendation. This specification defines a WebSocket based API for a Vehicle Information Service (VIS) to enable client applications to get, set, subscribe and unsubscribe to vehicle signals and data attributes. The purpose of the specification is to promote a Server API that [&#8230;]]]></summary>
+		<content type="html" xml:base="https://www.w3.org/blog/news/archives/6833"><![CDATA[<p>The <a href="https://www.w3.org/auto/wg/">Automotive Working Group</a> invites implementations of the <a href="https://www.w3.org/TR/2018/CR-vehicle-information-service-20180213/">Vehicle Information Service Specification</a> Candidate Recommendation. This specification defines a WebSocket based API for a Vehicle Information Service (VIS) to enable client applications to get, set, subscribe and unsubscribe to vehicle signals and data attributes.</p>
+<p>The purpose of the specification is to promote a Server API that enables application development in a consistent manner across participating automotive manufacturers.</p>
+]]></content>
+		</entry>
+		<entry>
+		<author>
+			<name>Coralie Mercier</name>
+						<uri>http://coraliemercier.wordpress.com/</uri>
+					</author>
+		<title type="html"><![CDATA[First Public Working Draft: Personalization Semantics Content Module 1.0]]></title>
+		<link rel="alternate" type="text/html" href="https://www.w3.org/blog/news/archives/6831" />
+		<id>https://www.w3.org/blog/news/?p=6831</id>
+		<updated>2018-02-22T10:49:28Z</updated>
+		<published>2018-02-13T09:01:41Z</published>
+		<category scheme="https://www.w3.org/blog/news" term="Publication" /><category scheme="https://www.w3.org/blog/news" term="Web Design and Applications" /><category scheme="https://www.w3.org/blog/news" term="Web of Services" />		<summary type="html"><![CDATA[The Accessible Rich Internet Applications (ARIA) Working Group has published a First Public Working Draft of Personalization Semantics Content Module 1.0. This document provides a vocabulary of terms that can be used to enhance web content with information about controls, symbols, and user interface elements. User agents use these semantics to augment or adapt content [&#8230;]]]></summary>
+		<content type="html" xml:base="https://www.w3.org/blog/news/archives/6831"><![CDATA[<p>The <a href="https://www.w3.org/WAI/ARIA/">Accessible Rich Internet Applications (ARIA) Working Group</a> has published a First Public Working Draft of <a href="https://www.w3.org/TR/2018/WD-personalization-semantics-content-1.0-20180213/">Personalization Semantics Content Module 1.0</a>. This document provides a vocabulary of terms that can be used to enhance web content with information about controls, symbols, and user interface elements. User agents use these semantics to augment or adapt content to the user scenario. This helps the user use and understand the content, and supports simplification and management of distractions.</p>
+<p>Personalization Semantics Content Module is a part of Personalization Semantics, which is introduced in the <a href="https://www.w3.org/TR/2018/WD-personalization-semantics-1.0-20180213/">Personalization Semantics Explainer 1.0</a>.</p>
+]]></content>
+		</entry>
+		<entry>
+		<author>
+			<name>Coralie Mercier</name>
+						<uri>http://coraliemercier.wordpress.com/</uri>
+					</author>
+		<title type="html"><![CDATA[W3C Announces All-out Spec Template Redesign Collaboration]]></title>
+		<link rel="alternate" type="text/html" href="https://www.w3.org/blog/news/archives/6823" />
+		<id>https://www.w3.org/blog/news/?p=6823</id>
+		<updated>2018-02-15T07:52:55Z</updated>
+		<published>2018-02-08T12:16:07Z</published>
+		<category scheme="https://www.w3.org/blog/news" term="Home Page Stories" /><category scheme="https://www.w3.org/blog/news" term="Uncategorized" />		<summary type="html"><![CDATA[W3C today announced a collaboration with Jefferson University User Experience and Interaction Design program, which has established a class and a small working group of student designers to re-design the W3C’s specification template, aiming to make the standards for the web easier to use. The scope, requirements and audiences considerations are listed in the SpecProd/Restyle [&#8230;]]]></summary>
+		<content type="html" xml:base="https://www.w3.org/blog/news/archives/6823"><![CDATA[<p><a class="imageLink" href="https://medium.com/jefferson-w3c-collaboration"><img src="https://cdn-images-1.medium.com/max/947/1*V95h-9pER3fjmmwQS3rQTA.jpeg" alt="The W3C Specification Redesign Team comprises students in the User Experience and Interaction Design master’s degree program at Jefferson University" width="100" /></a>W3C today announced a collaboration with <a href="http://www.jefferson.edu/">Jefferson University</a> User Experience and Interaction Design program, which has <a href="https://medium.com/jefferson-w3c-collaboration/announcing-the-jefferson-w3c-specification-collaboration-fd6080b6de89">established a class and a small working group of student designers</a> to <strong>re-design the W3C’s specification template, aiming to make the standards for the web easier to use</strong>. The scope, requirements and audiences considerations are listed in the <a href="https://www.w3.org/wiki/SpecProd/Restyle/Content">SpecProd/Restyle wiki</a>.</p>
+<p> The students are asking for your guidance, criticism and participation; and will be posting updates, sharing explorations and revisions, and requesting feedback via the <a href="https://medium.com/jefferson-w3c-collaboration">Jefferson + W3C Collaboration blog</a>. Everyone who uses or produces W3C specifications is invited to follow along and contribute. This will be a semester-long project for the students, with the goal of producing a prototype for May 2018. (Implementation and deployment plans will follow.)</p>
+]]></content>
+		</entry>
+		<entry>
+		<author>
+			<name>Xueyuan Jia</name>
+					</author>
+		<title type="html"><![CDATA[First Public Working Draft: CSS Grid Layout Module Level 2]]></title>
+		<link rel="alternate" type="text/html" href="https://www.w3.org/blog/news/archives/6818" />
+		<id>https://www.w3.org/blog/news/?p=6818</id>
+		<updated>2018-02-22T10:49:17Z</updated>
+		<published>2018-02-06T08:06:02Z</published>
+		<category scheme="https://www.w3.org/blog/news" term="Publication" /><category scheme="https://www.w3.org/blog/news" term="Web Design and Applications" />		<summary type="html"><![CDATA[The CSS Working Group has published a First Public Working Draft of CSS Grid Layout Module Level 2. This CSS module defines a two-dimensional grid-based layout system, optimized for user interface design. In the grid layout model, the children of a grid container can be positioned into arbitrary slots in a predefined flexible or fixed-size [&#8230;]]]></summary>
+		<content type="html" xml:base="https://www.w3.org/blog/news/archives/6818"><![CDATA[<p>The <a href="https://www.w3.org/Style/CSS/members">CSS Working Group</a> has published a First Public Working Draft of <a href="https://www.w3.org/TR/2018/WD-css-grid-2-20180206/">CSS Grid Layout Module Level 2</a>. This CSS module defines a two-dimensional grid-based layout system, optimized for user interface design. In the grid layout model, the children of a grid container can be positioned into arbitrary slots in a predefined flexible or fixed-size layout grid. Level 2 expands Grid by adding “subgrid” capabilities for nested grids to participate in the sizing of their parent grids; and aspect-ratio–controlled gutters.</p>
+<p><a href="https://www.w3.org/TR/CSS/">CSS</a> is a language for describing the rendering of structured documents (such as HTML and XML) on screen, on paper, in speech, etc.</p>
+]]></content>
+		</entry>
+		<entry>
+		<author>
+			<name>Coralie Mercier</name>
+						<uri>http://coraliemercier.wordpress.com/</uri>
+					</author>
+		<title type="html"><![CDATA[Patent Advisory Group Recommends Continuing Work on Web Payments Specifications]]></title>
+		<link rel="alternate" type="text/html" href="https://www.w3.org/blog/news/archives/6815" />
+		<id>https://www.w3.org/blog/news/?p=6815</id>
+		<updated>2018-02-13T14:33:00Z</updated>
+		<published>2018-02-02T11:21:02Z</published>
+		<category scheme="https://www.w3.org/blog/news" term="Uncategorized" /><category scheme="https://www.w3.org/blog/news" term="Web Design and Applications" /><category scheme="https://www.w3.org/blog/news" term="Web of Services" />		<summary type="html"><![CDATA[The second Web Payments Working Group Patent Advisory Group (PAG), launched in November 2017, has published a report recommending that W3C continue work on the Web Payments Specifications. W3C launches a PAG to resolve issues in the event a patent has been disclosed that may be essential, but is not available under the W3C Royalty-Free [&#8230;]]]></summary>
+		<content type="html" xml:base="https://www.w3.org/blog/news/archives/6815"><![CDATA[<p>The <a href="https://www.w3.org/2017/11/wpwg-pag/">second Web Payments Working Group Patent Advisory Group (PAG)</a>, launched in November 2017, has published a <a href="https://www.w3.org/2017/11/wpwg-pag/report.html">report</a> recommending that W3C continue work on the Web Payments Specifications. W3C <a href="https://www.w3.org/Consortium/Patent-Policy-20170801/#sec-Exception">launches a PAG</a> to resolve issues in the event a patent has been disclosed that may be essential, but is not available under the <a href="https://www.w3.org/Consortium/Patent-Policy-20170801/#sec-Requirements">W3C Royalty-Free licensing terms</a>.</p>
+]]></content>
+		</entry>
+		<entry>
+		<author>
+			<name>Xueyuan Jia</name>
+					</author>
+		<title type="html"><![CDATA[HTML Media Capture is now a W3C Recommendation]]></title>
+		<link rel="alternate" type="text/html" href="https://www.w3.org/blog/news/archives/6812" />
+		<id>https://www.w3.org/blog/news/?p=6812</id>
+		<updated>2018-03-01T13:14:51Z</updated>
+		<published>2018-02-01T08:22:52Z</published>
+		<category scheme="https://www.w3.org/blog/news" term="Publication" /><category scheme="https://www.w3.org/blog/news" term="Web Design and Applications" />		<summary type="html"><![CDATA[The Device and Sensors Working Group has published a W3C Recommendation of the HTML Media Capture specification. The HTML Media Capture specification defines an HTML form extension that facilitates user access to a device&#8217;s media capture mechanism, such as a camera, or microphone, from within a file upload control.]]></summary>
+		<content type="html" xml:base="https://www.w3.org/blog/news/archives/6812"><![CDATA[<p>The <a href="https://www.w3.org/2009/dap/">Device and Sensors Working Group</a> has published a W3C Recommendation of the <a href="https://www.w3.org/TR/2018/REC-html-media-capture-20180201/">HTML Media Capture</a> specification.</p>
+<p>The HTML Media Capture specification defines an HTML form extension that facilitates user access to a device&#8217;s <a href="https://www.w3.org/TR/2018/REC-html-media-capture-20180201/#dfn-media-capture-mechanism">media capture mechanism</a>, such as a camera, or microphone, from within a file upload control.</p>
+]]></content>
+		</entry>
+		<entry>
+		<author>
+			<name>Xueyuan Jia</name>
+					</author>
+		<title type="html"><![CDATA[Indexed Database API 2.0 is now a W3C Recommendation]]></title>
+		<link rel="alternate" type="text/html" href="https://www.w3.org/blog/news/archives/6795" />
+		<id>https://www.w3.org/blog/news/?p=6795</id>
+		<updated>2018-02-13T08:54:17Z</updated>
+		<published>2018-01-30T11:46:50Z</published>
+		<category scheme="https://www.w3.org/blog/news" term="Publication" /><category scheme="https://www.w3.org/blog/news" term="Web Design and Applications" />		<summary type="html"><![CDATA[The Web Platform Working Group has published a W3C Recommendation of the Indexed Database API 2.0 specification. The Indexed Database API 2.0 specification defines APIs for a database of records holding simple values and hierarchical objects. Each record consists of a key and some value. Moreover, the database maintains indexes over records it stores. An [&#8230;]]]></summary>
+		<content type="html" xml:base="https://www.w3.org/blog/news/archives/6795"><![CDATA[<p><a class="imageLink" href="https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/logo-db.png"><img src="https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/logo-db.png" alt="Indexed DB" width="80" /></a>The <a href="https://www.w3.org/WebPlatform/WG/">Web Platform Working Group</a> has published a W3C Recommendation of the <a href="https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/">Indexed Database API 2.0</a> specification.</p>
+<p>The Indexed Database API 2.0 specification defines APIs for a database of records holding simple values and hierarchical objects. Each record consists of a key and some value. Moreover, the database maintains indexes over records it stores. An application developer directly uses an API to locate records either by their key or by using an index. A query language can be layered on this API. An indexed database can be implemented using a persistent B-tree data structure.</p>
+]]></content>
+		</entry>
+		<entry>
+		<author>
+			<name>Xueyuan Jia</name>
+					</author>
+		<title type="html"><![CDATA[W3C Invites Implementations of WCAG 2.1]]></title>
+		<link rel="alternate" type="text/html" href="https://www.w3.org/blog/news/archives/6807" />
+		<id>https://www.w3.org/blog/news/?p=6807</id>
+		<updated>2018-03-01T11:48:33Z</updated>
+		<published>2018-01-30T11:45:43Z</published>
+		<category scheme="https://www.w3.org/blog/news" term="Publication" /><category scheme="https://www.w3.org/blog/news" term="Web Design and Applications" />		<summary type="html"><![CDATA[The Accessibility Guidelines Working Group invites implementations of the Web Content Accessibility Guidelines (WCAG) 2.1 Candidate Recommendation. WCAG 2.1 covers a wide range of recommendations for making Web content more accessible to a wider range of people with disabilities, including blindness and low vision, deafness and hearing loss, learning disabilities, cognitive limitations, limited movement, speech [&#8230;]]]></summary>
+		<content type="html" xml:base="https://www.w3.org/blog/news/archives/6807"><![CDATA[<p>The <a href="https://www.w3.org/WAI/GL/">Accessibility Guidelines Working Group</a> invites implementations of the <a href="https://www.w3.org/TR/2018/CR-WCAG21-20180130/">Web Content Accessibility Guidelines (WCAG) 2.1</a> Candidate Recommendation. WCAG 2.1 covers a wide range of recommendations for making Web content more accessible to a wider range of people with disabilities, including blindness and low vision, deafness and hearing loss, learning disabilities, cognitive limitations, limited movement, speech disabilities, photosensitivity, and combinations of these. These guidelines address accessibility of web content on desktops, laptops, tablets, and mobile devices. Following these guidelines will also often make your Web content more usable to users in general. See the post <a href="https://www.w3.org/blog/2018/01/wcag21-cr/">WCAG 2.1 is a Candidate Recommendation</a> for more information about this publication.</p>
+]]></content>
+		</entry>
+		<entry>
+		<author>
+			<name>Xueyuan Jia</name>
+					</author>
+		<title type="html"><![CDATA[W3C Invites Implementations of Selectors Level 3]]></title>
+		<link rel="alternate" type="text/html" href="https://www.w3.org/blog/news/archives/6805" />
+		<id>https://www.w3.org/blog/news/?p=6805</id>
+		<updated>2018-02-13T08:54:08Z</updated>
+		<published>2018-01-30T11:44:53Z</published>
+		<category scheme="https://www.w3.org/blog/news" term="Publication" /><category scheme="https://www.w3.org/blog/news" term="Web Design and Applications" />		<summary type="html"><![CDATA[The CSS Working Group invites implementations of the Selectors Level 3 Candidate Recommendation. Selectors are patterns that match against elements in a tree, and as such form one of several technologies that can be used to select nodes in an XML document. Selectors have been optimized for use with HTML and XML, and are designed [&#8230;]]]></summary>
+		<content type="html" xml:base="https://www.w3.org/blog/news/archives/6805"><![CDATA[<p>The <a href="https://www.w3.org/Style/CSS/members">CSS Working Group </a> invites implementations of the <a href="https://www.w3.org/TR/2018/CR-selectors-3-20180130/">Selectors Level 3</a> Candidate Recommendation. <a href="https://www.w3.org/TR/2018/CR-selectors-3-20180130/#selector">Selectors</a> are patterns that match against elements in a tree, and as such form one of several technologies that can be used to select nodes in an XML document. Selectors have been optimized for use with HTML and XML, and are designed to be usable in performance-critical code. This document describes the selectors that already exist in CSS1 [<a href="https://www.w3.org/TR/2018/CR-selectors-3-20180130/#ref-CSS1">CSS1</a>] and CSS2 [<a href="https://www.w3.org/TR/2018/CR-selectors-3-20180130/#ref-CSS21">CSS21</a>], and further introduces new selectors for CSS3 and other languages that may need them.</p>
+<p>CSS (Cascading Style Sheets) is a language for describing the rendering of HTML and XML documents on screen, on paper, in speech, etc. CSS uses Selectors for binding style properties to elements in the document.</p>
+]]></content>
+		</entry>
+		<entry>
+		<author>
+			<name>Xueyuan Jia</name>
+					</author>
+		<title type="html"><![CDATA[Upcoming Workshop: Data Privacy Controls and Vocabularies]]></title>
+		<link rel="alternate" type="text/html" href="https://www.w3.org/blog/news/archives/6797" />
+		<id>https://www.w3.org/blog/news/?p=6797</id>
+		<updated>2018-02-27T17:09:15Z</updated>
+		<published>2018-01-26T02:19:39Z</published>
+		<category scheme="https://www.w3.org/blog/news" term="Web Design and Applications" />		<summary type="html"><![CDATA[W3C announced today a W3C Workshop on Privacy and Linked Data, April 17-18 2018, in Vienna, Austria. The event is hosted by WU Vienna. The primary goal of the workshop is to explore interoperability in privacy and compliance expressions using Linked Data. But based on transportable linked data, many privacy concepts can be created. Expected [&#8230;]]]></summary>
+		<content type="html" xml:base="https://www.w3.org/blog/news/archives/6797"><![CDATA[<p><a class="imageLink" href="https://campus.wu.ac.at/en/"><img src="https://www.w3.org/2018/vocabws/campus-small.jpg" alt="WU Vienna Campus" width="100" /></a>W3C announced today <a href="https://www.w3.org/2018/vocabws/">a W3C Workshop on Privacy and Linked Data</a>, April 17-18 2018, in Vienna, Austria. The event is hosted by <a href="https://www.wu.ac.at/en/">WU Vienna.</a></p>
+<p>The primary goal of the workshop is to explore interoperability in privacy and compliance expressions using Linked Data. But based on transportable linked data, many privacy concepts can be created.</p>
+<p>Expected topics of discussion include:</p>
+<ul class="show_items">
+<li>Privacy and Transparency in Linked Data</li>
+<li>Identity management vocabularies</li>
+<li>Categories of sensitive and personal data</li>
+<li>Modeling/Interlinking aspects of privacy and provenance</li>
+<li>Modeling consent and making it transportable</li>
+<li>Vocabularies to model privacy policies, regulations, and involved (business) processes</li>
+<li>Modeling permissions, obligations, and their scope in dealing with personal data</li>
+<li>Reasoning about formally declared privacy policies, in order to detect policy violations, breach and enforce policies</li>
+<li>Exploring links and synergies using Linked Data vocabularies in the context of related efforts such as W3C&#8217;s Social Web WG, Verifiable Claims WG, ODRL/POE WG, Credentials CG, and PROV WG or other (non-W3C) efforts (e.g. OASIS XDI, OASIS COEL,
+Kantarainitiative’s CISWG)</li>
+<li>Visualizations of data and policy information to help data self determination</li>
+</ul>
+<p>For more information on the workshop, please see the <a href="https://www.w3.org/2018/vocabws/#participate">workshop details and submission instructions</a>.</p>
+<p><a href="https://www.w3.org/2002/09/wbs/1/2018vocabws/">Registration</a> is available online due by <strong>02 April 2018</strong>.</p>
+]]></content>
+		</entry>
+		<entry>
+		<author>
+			<name>Xueyuan Jia</name>
+					</author>
+		<title type="html"><![CDATA[ActivityPub is now a W3C Recommendation]]></title>
+		<link rel="alternate" type="text/html" href="https://www.w3.org/blog/news/archives/6785" />
+		<id>https://www.w3.org/blog/news/?p=6785</id>
+		<updated>2018-02-15T12:47:56Z</updated>
+		<published>2018-01-23T13:58:20Z</published>
+		<category scheme="https://www.w3.org/blog/news" term="Publication" /><category scheme="https://www.w3.org/blog/news" term="Web Design and Applications" />		<summary type="html"><![CDATA[The Social Web Working Group has published ActivityPub as a W3C Recommendation. ActivityPub is a decentralized social networking protocol based upon the ActivityStreams 2.0 data format. It provides a client to server API for creating, updating and deleting content, as well as a federated server to server API for delivering notifications and content. ActivityPub is [&#8230;]]]></summary>
+		<content type="html" xml:base="https://www.w3.org/blog/news/archives/6785"><![CDATA[<p>The <a href="https://www.w3.org/Social/WG">Social Web Working Group</a> has published <a href="https://www.w3.org/TR/2018/REC-activitypub-20180123/">ActivityPub</a> as a W3C Recommendation.</p>
+<p>ActivityPub is a decentralized social networking protocol based upon the <a href="https://www.w3.org/TR/activitystreams-core">ActivityStreams</a> 2.0 data format. It provides a client to server API for creating, updating and deleting content, as well as a federated server to server API for delivering notifications and content.</p>
+<p>ActivityPub is already <a href="https://activitypub.rocks/implementation-report/">implemented and deployed</a> to a number of projects and a wide userbase, including over <a href="https://mnm.social/">1 million registered users</a> across thousands of Mastodon instances. ActivityPub allows software projects both small and large to build social network offerings into their systems. Adding ActivityPub support allows interoperable social networking between applications with entirely different codebases. For example, <a href="https://github.com/tootsuite/mastodon">Mastodon</a> and <a href="https://github.com/Chocobozzz/PeerTube">PeerTube</a> users are able to use ActivityPub to <a href="https://peertube.cpy.re/videos/watch/da2b08d4-a242-4170-b32a-4ec8cbdca701">allow users to share videos and comment</a> across different servers.</p>
+]]></content>
+		</entry>
+		<entry>
+		<author>
+			<name>Xueyuan Jia</name>
+					</author>
+		<title type="html"><![CDATA[WebSub is now a W3C Recommendation]]></title>
+		<link rel="alternate" type="text/html" href="https://www.w3.org/blog/news/archives/6787" />
+		<id>https://www.w3.org/blog/news/?p=6787</id>
+		<updated>2018-02-06T08:08:42Z</updated>
+		<published>2018-01-23T13:55:45Z</published>
+		<category scheme="https://www.w3.org/blog/news" term="Publication" /><category scheme="https://www.w3.org/blog/news" term="Web Design and Applications" />		<summary type="html"><![CDATA[The Social Web Working Group has published WebSub as a W3C Recommendation. WebSub provides a common mechanism for communication between publishers of any kind of Web content and their subscribers, based on HTTP web hooks. Subscription requests are relayed through hubs, which validate and verify the request. Hubs then distribute new and updated content to [&#8230;]]]></summary>
+		<content type="html" xml:base="https://www.w3.org/blog/news/archives/6787"><![CDATA[<p>The <a href="https://www.w3.org/Social/WG">Social Web Working Group</a> has published <a href="https://www.w3.org/TR/2018/REC-websub-20180123/">WebSub</a> as a W3C Recommendation.</p>
+<p>WebSub provides a common mechanism for communication between publishers of any kind of Web content and their subscribers, based on HTTP web hooks. Subscription requests are relayed through hubs, which validate and verify the request. Hubs then distribute new and updated content to subscribers when it becomes available. WebSub was previously known as PubSubHubbub.</p>
+]]></content>
+		</entry>
+		<entry>
+		<author>
+			<name>Xueyuan Jia</name>
+					</author>
+		<title type="html"><![CDATA[Call for Review: WOFF File Format 2.0 is a W3C Proposed Recommendation]]></title>
+		<link rel="alternate" type="text/html" href="https://www.w3.org/blog/news/archives/6782" />
+		<id>https://www.w3.org/blog/news/?p=6782</id>
+		<updated>2018-02-01T08:24:21Z</updated>
+		<published>2018-01-11T12:14:44Z</published>
+		<category scheme="https://www.w3.org/blog/news" term="Publication" /><category scheme="https://www.w3.org/blog/news" term="Web Design and Applications" />		<summary type="html"><![CDATA[The WebFonts Working Group has published a Proposed Recommendation of WOFF File Format 2.0. Based on experience with WOFF 1.0, which is widely deployed, this specification was developed to provide improved compression and thus lower use of network bandwidth, while still allowing fast decompression even on mobile devices. This is achieved by combining a content-aware [&#8230;]]]></summary>
+		<content type="html" xml:base="https://www.w3.org/blog/news/archives/6782"><![CDATA[<p>The <a href="https://www.w3.org/Fonts/WG/">WebFonts Working Group</a> has published a Proposed Recommendation of <a href="https://www.w3.org/TR/2018/PR-WOFF2-20180111/">WOFF File Format 2.0</a>. Based on experience with WOFF 1.0, which is widely deployed, this specification was developed to provide improved compression and thus lower use of network bandwidth, while still allowing fast decompression even on mobile devices. This is achieved by combining a content-aware preprocessing step and improved entropy coding, compared to the Flate compression used in WOFF 1.0.</p>
+<p>Comments are welcome through <strong>11 February 2018</strong>.</p>
+]]></content>
+		</entry>
+		<entry>
+		<author>
+			<name>Xueyuan Jia</name>
+					</author>
+		<title type="html"><![CDATA[Upcoming Workshop: Web5G: Aligning evolutions of network and Web technologies]]></title>
+		<link rel="alternate" type="text/html" href="https://www.w3.org/blog/news/archives/6778" />
+		<id>https://www.w3.org/blog/news/?p=6778</id>
+		<updated>2018-02-06T08:06:38Z</updated>
+		<published>2018-01-10T14:31:25Z</published>
+		<category scheme="https://www.w3.org/blog/news" term="Browsers and Authoring Tools" /><category scheme="https://www.w3.org/blog/news" term="Web Design and Applications" /><category scheme="https://www.w3.org/blog/news" term="Web of Devices" /><category scheme="https://www.w3.org/blog/news" term="Web of Services" />		<summary type="html"><![CDATA[W3C announced today Web5G: Aligning evolutions of network and Web technologies Workshop, May 10-11 2018, in London, UK. The event is hosted by GSMA. The primary goal of the workshop is to bring together telecommunications operators, network equipment providers, content delivery networks, browser vendors, and application developers to evaluate and prepare for the impact of [&#8230;]]]></summary>
+		<content type="html" xml:base="https://www.w3.org/blog/news/archives/6778"><![CDATA[<p><a class="imageLink" href="https://www.w3.org/2017/11/web5g.png"><img src="https://www.w3.org/2017/11/web5g-small.png" alt="diagram representing web5g positioning" width="100" /></a>W3C announced today <a href="https://www.w3.org/2017/11/web5g-workshop/">Web5G: Aligning evolutions of network and Web technologies Workshop</a>, May 10-11 2018, in London, UK. The event is hosted by GSMA.</p>
+<p>The primary goal of the workshop is to bring together telecommunications operators, network equipment providers, content delivery networks, browser vendors, and application developers to evaluate and prepare for the impact of 5G and other network-layer technologies on Web standards.</p>
+<p>Expected topics of discussion include:</p>
+<ul class="show_items">
+<li>Performance bottlenecks of Web apps on ultra-fast networks</li>
+<li>Dimensioning 5G Networks for supporting existing and future Web technologies (VR/AR, automotive, WebRTC, IoT)</li>
+<li>Architectural evolutions of the Web to enable greater network/application integration</li>
+<li>Connecting network management and network metrics from Web applications</li>
+<li>Case studies of existing network/application integration and their extension to the Web</li>
+<li>Features provided by new networking technologies and their applicability to Web applications</li>
+<li>Bringing edge-computing capabilities to Web applications</li>
+<li>Impact of integrating QUIC in the Web Platform</li>
+</ul>
+<p>For more information on the workshop, please see the <a href="https://www.w3.org/2017/11/web5g-workshop/#attend">workshop details and submission instructions</a>.</p>
+<p><a href="https://www.w3.org/2002/09/wbs/1/web5g-workshop/">Registration</a> is available online due by <strong>30 March 2018</strong>.</p>
+]]></content>
+		</entry>
+		<entry>
+		<author>
+			<name>Xueyuan Jia</name>
+					</author>
+		<title type="html"><![CDATA[W3C Advisory Committee elects Technical Architecture Group]]></title>
+		<link rel="alternate" type="text/html" href="https://www.w3.org/blog/news/archives/6772" />
+		<id>https://www.w3.org/blog/news/?p=6772</id>
+		<updated>2018-01-30T11:48:47Z</updated>
+		<published>2018-01-08T13:09:35Z</published>
+		<category scheme="https://www.w3.org/blog/news" term="Web Architecture" />		<summary type="html"><![CDATA[The W3C Advisory Committee has elected the following people to the W3C Technical Architecture Group (TAG): David Baron (Mozilla Foundation) and Lukasz Olejnik (W3C Invited Expert). They join co-Chair Tim Berners-Lee and continuing participants Hadley Beeman (W3C Invited Expert), Travis Leithead (Microsoft), Sangwhan Moon (Odd Concepts), Alex Russell (Google), Daniel Appelquist (Samsung Electronics; co-Chair), Peter [&#8230;]]]></summary>
+		<content type="html" xml:base="https://www.w3.org/blog/news/archives/6772"><![CDATA[<p><a class="imageLink" href="https://www.w3.org/2017/12/01-tag-nominations"><img src="https://www.w3.org/blog/news/files/2017/12/w3c-tag-300x300.jpg" alt="W3C TAG logo" width="80" height="80" /></a>The W3C Advisory Committee has <a href="https://www.w3.org/2017/12/01-tag-nominations">elected</a> the following people to the <a href="https://www.w3.org/2001/tag/">W3C Technical Architecture Group</a> (TAG): David Baron (Mozilla Foundation) and Lukasz Olejnik (W3C Invited Expert). They join co-Chair Tim Berners-Lee and continuing participants Hadley Beeman (W3C Invited Expert), Travis Leithead (Microsoft), Sangwhan Moon (Odd Concepts), Alex Russell (Google), Daniel Appelquist (Samsung Electronics; co-Chair), Peter Linss (W3C Invited Expert; co-Chair) –both re-appointed by the Director. Yves Lafon continues as staff contact. W3C thanks Andrew Betts (Fastly) whose term ends this month, for his contributions. The mission of the TAG is to build consensus around principles of Web architecture and to interpret and clarify these principles when necessary, to resolve issues involving general Web architecture brought to the TAG, and to help coordinate cross-technology architecture developments inside and outside W3C. Learn more about the <a href="https://www.w3.org/2001/tag/">TAG</a>.</p>
+]]></content>
+		</entry>
+		<entry>
+		<author>
+			<name>Xueyuan Jia</name>
+					</author>
+		<title type="html"><![CDATA[Call for Review: ODRL is a W3C Proposed Recommendation]]></title>
+		<link rel="alternate" type="text/html" href="https://www.w3.org/blog/news/archives/6751" />
+		<id>https://www.w3.org/blog/news/?p=6751</id>
+		<updated>2018-01-30T11:48:20Z</updated>
+		<published>2018-01-04T03:19:19Z</published>
+		<category scheme="https://www.w3.org/blog/news" term="Publication" /><category scheme="https://www.w3.org/blog/news" term="Web Design and Applications" />		<summary type="html"><![CDATA[The Permissions &#38; Obligations Expression Working Group has just published a Proposed Recommendation for two documents, namely: ODRL Information Model 2.2 — The Open Digital Rights Language (ODRL) is a policy expression language that provides a flexible and interoperable information model, vocabulary, and encoding mechanisms for representing statements about the usage of content and services. [&#8230;]]]></summary>
+		<content type="html" xml:base="https://www.w3.org/blog/news/archives/6751"><![CDATA[<p>The <a href="https://www.w3.org/2016/poe/">Permissions &amp; Obligations Expression Working Group</a> has just published a Proposed Recommendation for two documents, namely:</p>
+<ul>
+<li><a href="https://www.w3.org/TR/2018/PR-odrl-model-20180104/">ODRL Information Model 2.2</a> — The Open Digital Rights Language (ODRL) is a policy expression language that provides a flexible and interoperable information model, vocabulary, and encoding mechanisms for representing statements about the usage of content and services. The ODRL Information Model describes the underlying concepts, entities, and relationships that form the foundational basis for the semantics of the ODRL policies. Policies are used to represent permitted and prohibited actions over a certain asset, as well as the obligations required to be meet by stakeholders. In addition, policies may be limited by constraints (e.g., temporal or spatial constraints) and duties (e.g. payments) may be imposed on permissions.</li>
+<li><a href="https://www.w3.org/TR/2018/PR-odrl-vocab-20180104/">ODRL Vocabulary &amp; Expression 2.2</a> — The ODRL Vocabulary and Expression describes the terms used in ODRL policies and how to encode them.</li>
+</ul>
+<p>Comments are welcome through <strong>4 February 2018</strong>.</p>
+]]></content>
+		</entry>
+		<entry>
+		<author>
+			<name>Xueyuan Jia</name>
+					</author>
+		<title type="html"><![CDATA[First Public Working Drafts: Web Publications, Packaged Web Publications, and Web Annotation Extensions for Web Publications]]></title>
+		<link rel="alternate" type="text/html" href="https://www.w3.org/blog/news/archives/6756" />
+		<id>https://www.w3.org/blog/news/?p=6756</id>
+		<updated>2018-01-26T02:38:39Z</updated>
+		<published>2018-01-04T03:15:11Z</published>
+		<category scheme="https://www.w3.org/blog/news" term="Publication" /><category scheme="https://www.w3.org/blog/news" term="Web Design and Applications" />		<summary type="html"><![CDATA[The W3C Publishing Working Group has published three First Public Working Drafts today. The Web Publications defines a collection of information that describes the structure of Web Publications such that user agents can provide user experiences well-suited to reading publications, such as sequential navigation and offline reading. This information set includes the default reading order, [&#8230;]]]></summary>
+		<content type="html" xml:base="https://www.w3.org/blog/news/archives/6756"><![CDATA[<p>The <a href="https://www.w3.org/publishing/groups/publ-wg/">W3C Publishing Working Group</a> has published three First Public Working Drafts today.</p>
+<ul>
+<li>The <a href="https://www.w3.org/TR/2018/WD-wpub-20180104">Web Publications</a> defines a collection of information that describes the structure of Web Publications such that user agents can provide user experiences well-suited to reading publications, such as sequential navigation and offline reading. This information set includes the default reading order, a list of resources, and publication-wide metadata.</li>
+<li>The <a href="https://www.w3.org/TR/2018/WD-pwpub-20180104">Packaged Web Publications</a> defines a packaging format for combining the resources of a Web Publication [wpub] into a single portable file.</li>
+<li>The <a href="https://www.w3.org/TR/2018/WD-wpub-ann-20180104">Web Annotation Extensions for Web Publications</a> extends the foundational model that has been developed in the <a href="https://www.w3.org/TR/annotation-model/">Web Annotation Model</a> Recommendation by adding selector types applicable to collective resources and a new model component for describing positions in text and byte streams.</li>
+</ul>
+<p>The Working Group welcomes comments via the GitHub repository issues (see the respective documents’ headers for the reference of the repositories).</p>
+]]></content>
+		</entry>
+		<entry>
+		<author>
+			<name>Xueyuan Jia</name>
+					</author>
+		<title type="html"><![CDATA[Roadmap of Web Applications on Mobile]]></title>
+		<link rel="alternate" type="text/html" href="https://www.w3.org/blog/news/archives/6758" />
+		<id>https://www.w3.org/blog/news/?p=6758</id>
+		<updated>2018-01-30T11:47:51Z</updated>
+		<published>2018-01-03T08:51:33Z</published>
+		<category scheme="https://www.w3.org/blog/news" term="Web Design and Applications" /><category scheme="https://www.w3.org/blog/news" term="Web of Devices" /><category scheme="https://www.w3.org/blog/news" term="Web of Services" />		<summary type="html"><![CDATA[W3C has published a Roadmap of Web Applications on Mobile, an overview of the various technologies developed in W3C that increase the capabilities of Web applications, and how they apply more specifically to the mobile context. Sponsored by Beihang University, this edition is a redesign of the Standards for Web Applications on Mobile: current state [&#8230;]]]></summary>
+		<content type="html" xml:base="https://www.w3.org/blog/news/archives/6758"><![CDATA[<p><a class="imageLink" href="https://www.w3.org/blog/news/files/2018/01/Screen-Shot-2018-01-03-at-12.08.11-.png"><img src="https://www.w3.org/blog/news/files/2018/01/Screen-Shot-2018-01-03-at-12.08.11--300x258.png" alt="Screenshot of the Roadmap of Web Applications on Mobile" width="100" /></a>W3C has published a <a href="https://www.w3.org/2018/01/web-roadmaps/mobile/">Roadmap of Web Applications on Mobile</a>, an overview of the various technologies developed in W3C that increase the capabilities of Web applications, and how they apply more specifically to the mobile context.</p>
+<p>Sponsored by Beihang University, this edition is a redesign of the <a href="https://www.w3.org/2015/08/mobile-web-app-state/">Standards for Web Applications on Mobile: current state and roadmap</a> document, published on a quarterly basis from 2011 to 2015. It documents existing standards, highlights ongoing standardization efforts, points out topics under incubation, and discusses technical gaps that may need to be addressed in the future. For instance, the document identifies ongoing work around Progressive Web Applications that allow to create a consistent and persistent lifecycle for applications on the Web platform.</p>
+<p>New versions will be published on a quarterly basis, or as needed depending on progress of key technologies of the Web platform. The document is part of a set of roadmaps under development in a <a href="https://github.com/w3c/web-roadmaps/">GitHub repository</a>, such as the <a href="https://w3c.github.io/web-roadmaps/media/">Overview of Media Technologies on the Web</a>. These roadmaps aim to provide a short-to-mid term view of where the Web Platform is heading in different areas. We encourage the community to review them and raise comments, or suggest new ones, on the repository&#8217;s <a href="https://github.com/w3c/web-roadmaps/issues/">issue tracker</a>.</p>
+]]></content>
+		</entry>
+		<entry>
+		<author>
+			<name>Xueyuan Jia</name>
+					</author>
+		<title type="html"><![CDATA[HTML 5.2 is now a W3C Recommendation]]></title>
+		<link rel="alternate" type="text/html" href="https://www.w3.org/blog/news/archives/6696" />
+		<id>https://www.w3.org/blog/news/?p=6696</id>
+		<updated>2018-01-23T14:01:08Z</updated>
+		<published>2017-12-14T12:18:48Z</published>
+		<category scheme="https://www.w3.org/blog/news" term="Publication" /><category scheme="https://www.w3.org/blog/news" term="Web Design and Applications" />		<summary type="html"><![CDATA[The Web Platform Working Group has published a W3C Recommendation of the HTML 5.2 specification that would obsolete the HTML 5.1 Recommendation. The HTML 5.2 specification defines the 5th major version, second minor revision of the core language of the World Wide Web: the Hypertext Markup Language (HTML). In this version, new features continue to [&#8230;]]]></summary>
+		<content type="html" xml:base="https://www.w3.org/blog/news/archives/6696"><![CDATA[<p><a class="imageLink" href="https://www.w3.org/TR/html5/"><img src="http://www.w3.org/html/logo/downloads/HTML5_Logo_128.png" alt="HTML5" width="128" height="128" /></a>The <a href="https://www.w3.org/WebPlatform/WG/">Web Platform Working Group</a> has published a W3C Recommendation of the <a href="https://www.w3.org/TR/2017/REC-html52-20171214/">HTML 5.2</a> specification that would obsolete the <a href="https://www.w3.org/TR/html51/">HTML 5.1 Recommendation</a>.</p>
+<p>The HTML 5.2 specification defines the 5th major version, second minor revision of the core language of the World Wide Web: the Hypertext Markup Language (HTML). In this version, <a href="https://www.w3.org/TR/html52/changes.html">new features</a> continue to be introduced to help Web application authors, new elements continue to be introduced based on research into prevailing authoring practices, and special attention continues to be given to defining clear conformance criteria for user agents in an effort to improve interoperability.</p>
+<p>The group also published a First Public Working Draft of <a href="https://www.w3.org/TR/2017/WD-html53-20171214/">HTML 5.3</a>, which defines the 5th major version, third minor revision of the core language of the World Wide Web: the Hypertext Markup Language (HTML).</p>
+]]></content>
+		</entry>
+	</feed>
